@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kite One', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f0f0f, #1a0008);
+    color: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.container-header{
+    width: 100%;
+    background: #140006;
+    box-shadow: 0 0 20px #800020;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+header{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #b3003c;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover::after{
+    width: 100%;
+}
+
+.nav ul li a:hover{
+    color: #b3003c;
+}
+
+/* ================= SECCION ================= */
+
+.sobremi{
+    padding: 130px 20px 80px 20px;
+}
+
+.container-section{
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 25px;
+    background: rgba(20, 0, 6, 0.55);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 40px rgba(179, 0, 60, 0.3);
+}
+
+/* TITULO */
+
+.container-section h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #800020;
+}
+
+.container-section p{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.container-section p span{
+    color: #b3003c;
+    font-weight: bold;
+}
+
+/* ================= DATOS PERSONALES ================= */
+
+.fila{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.col{
+    width: 100%;
+}
+
+.col h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* GRID DATOS */
+
+.col ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.col ul li{
+    background: #1a0008;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #b3003c;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.col ul li:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #b3003c;
+}
+
+.col ul li strong{
+    display: block;
+    margin-bottom: 5px;
+    color: #b3003c;
+}
+
+.col ul li span{
+    font-size: 14px;
+}
+
+/* ================= LINEA DECORATIVA ================= */
+
+.decorative-line{
+    width: 60%;
+    height: 2px;
+    margin: 60px auto;
+    background: linear-gradient(to right, transparent, #b3003c, transparent);
+    box-shadow: 0 0 15px #b3003c;
+}
+
+/* ================= INTERESES ================= */
+
+.container-interes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    perspective: 1000px;
+}
+
+.interes{
+    background: #1a0008;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 1px solid #b3003c;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.interes i{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #b3003c;
+}
+
+.interes span{
+    display: block;
+    margin-top: 5px;
+}
+
+/* ROTACION 3D */
+
+.interes:hover{
+    transform: rotateY(180deg);
+    background: #b3003c;
+    box-shadow: 0 0 25px #b3003c;
+}
+
+.interes:hover i,
+.interes:hover span{
+    color: #fff;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background: #0d0004;
+    padding: 25px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a{
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.redes a:hover{
+    color: #b3003c;
+    text-shadow: 0 0 10px #b3003c;
+}
+
+/* ================= RESPONSIVE ================= */
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+    .nav{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #140006;
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-toggle:checked ~ .nav{
+        display: flex;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+}
