@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), 
+              url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* ═══════════════════════════════════
+   HEADER FIJO EN LA PARTE SUPERIOR
+   ═══════════════════════════════════ */
+.container-header {
+  background: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo a {
+  font-family: 'Righteous', cursive;
+  font-size: 36px;
+  color: #1cb698;
+  text-decoration: none;
+}
+
+/* ═══════════════════════════════════
+   MENÚ DE NAVEGACIÓN
+   ═══════════════════════════════════ */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #1cb698;
+}
+
+/* ═══════════════════════════════════
+   MENÚ RESPONSIVE (sin JavaScript)
+   ═══════════════════════════════════ */
+.menu-togle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1cb698;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
+/* ═══════════════════════════════════
+   SECCIÓN PRINCIPAL (HERO)
+   ═══════════════════════════════════ */
+.inicio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.container-espacio{
+  background-color: black;
+  padding: 30px;
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.container-image image {
+  margin-top: 40px;
+  border: 10px solid #1cb698;
+  width: 80%;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+
+.container-espacio h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  font-family: 'Righteous', cursive;
+}
+
+.container-espacio h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* ═══════════════════════════════════
+   REDES SOCIALES
+   ═══════════════════════════════════ */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.redes a {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  background: #1cb698;
+  border-color: #1cb698;
+  transform: scale(1.1);
+}
+
+/* ═══════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════ */
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* ═══════════════════════════════════
+   RESPONSIVE DESIGN (Móviles)
+   ═══════════════════════════════════ */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #252a2e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 180px;
+    padding: 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 0 10px;
+  }
+
+  /* Mostrar menú cuando el checkbox está marcado */
+  #menu-togle:checked + .menu-icon + .nav ul {
+    display: flex;
+    align-items: center;
+  }
+}
