@@ -1,11 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum - Jimmy Alexander Lombana Rivera</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/curriculum.css">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- Header con menú de navegación -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="./index.html">JALMPA</a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobremi.html">Sobre Mi</a></li>
+                    <li><a href="./skill.html">Skills</a></li>
+                    <li><a href="./curriculum.html">Curriculum</a></li>
+                    <li><a href="./protafolio.html">Portafolio</a></li>
+                    <li><a href="./contactenos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Sección Curriculum -->
+    <section class="curriculum">
+        <div class="container">
+            <h1>Curriculum Vitae</h1>
+
+            <div class="curriculum-content">
+                <!-- Educación -->
+                <div class="section">
+                    <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2>
+                    
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Ingeniero de Sistemas</h3>
+                            <span class="year">2018 - 2023</span>
+                        </div>
+                        <p class="institution">Universidad Tecnológica del Cauca</p>
+                        <p class="description">Especialización en Desarrollo de Software y Arquitectura de Sistemas</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Técnico en Programación</h3>
+                            <span class="year">2015 - 2017</span>
+                        </div>
+                        <p class="institution">Instituto Técnico Comercial</p>
+                        <p class="description">Formación en Desarrollo Web y Programación Orientada a Objetos</p>
+                    </div>
+                </div>
+
+                <!-- Experiencia -->
+                <div class="section">
+                    <h2><i class="fa-solid fa-briefcase"></i> Experiencia Laboral</h2>
+                    
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Desarrollador Full Stack Senior</h3>
+                            <span class="year">2022 - Presente</span>
+                        </div>
+                        <p class="institution">Tech Solutions Inc.</p>
+                        <ul class="description-list">
+                            <li>Desarrollo de aplicaciones web modernas con React y Node.js</li>
+                            <li>Diseño y implementación de APIs RESTful</li>
+                            <li>Liderazgo de equipo de desarrollo</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Desarrollador Full Stack Junior</h3>
+                            <span class="year">2020 - 2022</span>
+                        </div>
+                        <p class="institution">Digital Innovations</p>
+                        <ul class="description-list">
+                            <li>Desarrollo de funcionalidades frontend con JavaScript y React</li>
+                            <li>Implementación de base de datos con MongoDB</li>
+                            <li>Mantenimiento de código y control de versiones</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Practicante de Programación</h3>
+                            <span class="year">2019 - 2020</span>
+                        </div>
+                        <p class="institution">Web Development Studio</p>
+                        <ul class="description-list">
+                            <li>Apoyo en desarrollo de sitios web responsivos</li>
+                            <li>Uso de tecnologías HTML5, CSS3 y JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certificaciones -->
+                <div class="section">
+                    <h2><i class="fa-solid fa-certificate"></i> Certificaciones</h2>
+                    
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Full Stack Web Development</h3>
+                            <span class="year">2023</span>
+                        </div>
+                        <p class="institution">Coursera</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Advanced JavaScript</h3>
+                            <span class="year">2022</span>
+                        </div>
+                        <p class="institution">Udemy</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <h3>Cloud Computing with AWS</h3>
+                            <span class="year">2021</span>
+                        </div>
+                        <p class="institution">Amazon Web Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Jimmy Alexander Lombana Rivera. Todos los derechos reservados.</p>
+            <div class="redes">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

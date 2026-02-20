@@ -1,11 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio - Jimmy Alexander Lombana Rivera</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/portafolio.css">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- Header con menú de navegación -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="./index.html">JALMPA</a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobremi.html">Sobre Mi</a></li>
+                    <li><a href="./skill.html">Skills</a></li>
+                    <li><a href="./curriculum.html">Curriculum</a></li>
+                    <li><a href="./protafolio.html">Portafolio</a></li>
+                    <li><a href="./contactenos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Sección Portafolio -->
+    <section class="portafolio">
+        <div class="container">
+            <h1>Mi Portafolio</h1>
+            <p class="subtitle">Proyectos destacados en los que he trabajado</p>
+
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="./img/hero.png" alt="E-commerce Platform">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>E-commerce Platform</h3>
+                                <p>Plataforma de compra-venta en línea</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>E-commerce Platform</h4>
+                        <p>Plataforma completa de e-commerce construida con React, Node.js y MongoDB. Incluye sistema de pagos integrado y panel de administración.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="./img/hero.png" alt="Task Management App">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Task Management App</h3>
+                                <p>Aplicación de gestión de tareas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Task Management App</h4>
+                        <p>Aplicación web para gestionar tareas y proyectos. Desarrollada con Vue.js y Firebase, con interfaz moderna y responsiva.</p>
+                        <div class="tech-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>CSS3</span>
+                        </div>
+                        <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="./img/hero.png" alt="Social Network">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Social Network</h3>
+                                <p>Red social interactiva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Social Network</h4>
+                        <p>Red social con funcionalidades de chat en tiempo real, publicaciones y notificaciones. Construida con tecnologías modernas.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>WebSockets</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="./img/hero.png" alt="Analytics Dashboard">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Analytics Dashboard</h3>
+                                <p>Panel de análisis de datos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Analytics Dashboard</h4>
+                        <p>Dashboard interactivo para visualizar analíticas en tiempo real. Integración con gráficos dinámicos y datos en tiempo real.</p>
+                        <div class="tech-tags">
+                            <span>Node.js</span>
+                            <span>Chart.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="./img/hero.png" alt="Blog Platform">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Blog Platform</h3>
+                                <p>Plataforma de blogs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Blog Platform</h4>
+                        <p>Plataforma completa para crear y compartir blogs. Incluye editor de contenido WYSIWYG y sistema de comentarios.</p>
+                        <div class="tech-tags">
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>React</span>
+                        </div>
+                        <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="./img/hero.png" alt="Weather App">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Weather App</h3>
+                                <p>Aplicación de clima</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Weather App</h4>
+                        <p>Aplicación para consultar el clima en tiempo real. Integración con APIs externas y diseño responsivo.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>API REST</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Jimmy Alexander Lombana Rivera. Todos los derechos reservados.</p>
+            <div class="redes">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

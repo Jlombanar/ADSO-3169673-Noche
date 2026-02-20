@@ -1,0 +1,228 @@
+/* Estilos para página Contacto */
+
+.contacto {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.contacto h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, var(--text-light) 0%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideInDown 0.6s ease-out;
+}
+
+.contacto .subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.contacto-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-item {
+  background: linear-gradient(135deg, var(--secondary-dark) 0%, rgba(26, 31, 58, 0.8) 100%);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(122, 58, 237, 0.2);
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateX(-10px);
+  border-color: var(--accent-light);
+  box-shadow: 0 10px 30px rgba(122, 58, 237, 0.1);
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, rgba(42, 90, 128, 0.2) 0%, rgba(122, 58, 237, 0.2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(122, 58, 237, 0.3);
+}
+
+.info-icon i {
+  font-size: 24px;
+  color: var(--accent-light);
+}
+
+.info-item h3 {
+  color: var(--text-light);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+.info-item a {
+  color: var(--accent-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+.redes-contacto {
+  background: linear-gradient(135deg, var(--secondary-dark) 0%, rgba(26, 31, 58, 0.8) 100%);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(122, 58, 237, 0.2);
+  text-align: center;
+}
+
+.redes-contacto h3 {
+  color: var(--text-light);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.redes-contacto .redes {
+  justify-content: center;
+  margin: 0;
+}
+
+/* Formulario */
+.formulario-contacto {
+  background: linear-gradient(135deg, var(--secondary-dark) 0%, rgba(26, 31, 58, 0.8) 100%);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(122, 58, 237, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(122, 58, 237, 0.3);
+  border-radius: 8px;
+  background: rgba(15, 15, 30, 0.5);
+  color: var(--text-light);
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-light);
+  background: rgba(15, 15, 30, 0.7);
+  box-shadow: 0 0 20px rgba(122, 58, 237, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-light) 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(122, 58, 237, 0.3);
+}
+
+.btn-enviar:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contacto-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contacto h1 {
+    font-size: 32px;
+  }
+
+  .formulario-contacto {
+    padding: 25px;
+  }
+
+  .contacto-info {
+    gap: 20px;
+  }
+
+  .info-item {
+    padding: 20px;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

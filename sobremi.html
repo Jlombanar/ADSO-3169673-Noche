@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Mi - Jimmy Alexander Lombana Rivera</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sobremi.css">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- Header con menú de navegación -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="./index.html">DJLT</a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobremi.html">Sobre Mi</a></li>
+                    <li><a href="./skill.html">Skills</a></li>
+                    <li><a href="./curriculum.html">Curriculum</a></li>
+                    <li><a href="./protafolio.html">Portafolio</a></li>
+                    <li><a href="./contactenos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Sección Sobre Mi -->
+    <section class="sobremi">
+        <div class="container">
+            <h1>Sobre Mi</h1>
+            <div class="content-sobremi">
+                <div class="imagen-perfil">
+                    <img src="./img/hero.png" alt="Jimmy Alexander Lombana Rivera">
+                </div>
+                <div class="texto-sobremi">
+                    <h2>Deimer jair leon tovar </h2>
+                    <p>Soy un tecnologo de sistemas apasionado por la tecnología y el desarrollo de software. Con experiencia en múltiples lenguajes de programación y tecnologías modernas, me dedico a crear soluciones innovadoras y aplicaciones de alta calidad.</p>
+                    
+                    <p>Mi objetivo es continuar creciendo profesionalmente mientras ayudo a otros a alcanzar sus metas tecnológicas. Creo en la importancia de escribir código limpio, mantenible y eficiente.</p>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>1+</h3>
+                            <p>Años Experiencia</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>Clientes Satisfechos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Deimer Jair Leon Tovar. Todos los derechos reservados.</p>
+            <div class="redes">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
