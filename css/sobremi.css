@@ -1,4 +1,4 @@
-/* Estilos para página Sobre Mi */
+
 
 .sobremi {
   min-height: 100vh;
@@ -120,25 +120,97 @@
 }
 
 /* Responsive */
+@media screen and (max-width: 1024px) {
+  .content-sobremi {
+    gap: 40px;
+  }
+
+  .sobremi h1 {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .content-sobremi {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sobremi {
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
 
   .sobremi h1 {
     font-size: 32px;
+    margin-bottom: 30px;
   }
 
   .texto-sobremi h2 {
     font-size: 24px;
   }
 
+  .texto-sobremi p {
+    font-size: 15px;
+  }
+
   .imagen-perfil img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
   .stats {
     grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .stat-item {
+    padding: 20px 15px;
+  }
+
+  .stat-item h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sobremi {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .sobremi h1 {
+    font-size: 24px;
+  }
+
+  .texto-sobremi h2 {
+    font-size: 20px;
+  }
+
+  .texto-sobremi p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .imagen-perfil img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .stat-item {
+    padding: 15px 10px;
+  }
+
+  .stat-item h3 {
+    font-size: 24px;
+  }
+
+  .stat-item p {
+    font-size: 12px;
   }
 }

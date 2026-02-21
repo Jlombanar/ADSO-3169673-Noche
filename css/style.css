@@ -1,4 +1,4 @@
-/* Importar fuentes de Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
@@ -104,12 +104,31 @@ body {
 
 .menu-icon {
   display: none;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
   color: var(--accent-light);
-  margin-left: auto;
-  border-radius: 20px;
-  transition: 0.3s;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 100;
+}
+
+.menu-icon:hover {
+  background: rgba(168, 85, 247, 0.1);
+  transform: scale(1.1);
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 97;
+  cursor: pointer;
 }
 
 .inicio {
@@ -176,8 +195,8 @@ body {
 
 .container-img img {
   border: 3px solid var(--accent-blue);
-  width: 150px;
-  height: 150px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   display: block;
   margin: auto;
@@ -288,7 +307,20 @@ footer .redes {
 
 @media screen and (max-width: 768px) {
   .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    order: 3;
+  }
+
+  .menu-overlay {
     display: block;
+  }
+
+  #menu-toggle:checked ~ .menu-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
   }
 
   .nav {
@@ -298,18 +330,25 @@ footer .redes {
     width: 100%;
     height: calc(100vh - 60px);
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
-    transition: right 0.3s;
-    backdrop-filter: blur(10px);
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(15px);
+    border-left: 1px solid rgba(122, 58, 237, 0.2);
+    z-index: 98;
   }
 
   #menu-toggle:checked ~ .menu-icon ~ .nav {
     right: 0;
   }
 
+  #menu-toggle:checked ~ .menu-icon {
+    color: var(--accent-blue);
+  }
+
   .nav ul {
     flex-direction: column;
-    padding: 40px 20px;
-    gap: 20px;
+    padding: 30px 20px;
+    gap: 15px;
+    list-style: none;
   }
 
   .nav ul li a {
@@ -317,7 +356,8 @@ footer .redes {
     padding: 15px 20px;
     font-size: 16px;
     border-left: 3px solid transparent;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    border-radius: 6px;
   }
 
   .nav ul li a::after {
@@ -327,18 +367,90 @@ footer .redes {
   .nav ul li a:hover {
     border-left-color: var(--accent-light);
     padding-left: 30px;
+    background: rgba(168, 85, 247, 0.1);
   }
+
 
   .container-banner {
     margin: 20px;
     padding: 30px 20px;
+    max-width: 90%;
   }
 
   .container-banner h1 {
     font-size: 28px;
   }
 
+  .container-img img {
+    width: 150px;
+    height: 150px;
+  }
+
   .inicio {
     padding-top: 60px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .inicio::before {
+    display: none;
+  }
+
+  .inicio::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-header header {
+    padding: 15px 15px;
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+
+  .container-banner {
+    margin: 15px;
+    padding: 20px 15px;
+  }
+
+  .container-banner h1 {
+    font-size: 22px;
+  }
+
+  .container-banner h2 {
+    font-size: 13px;
+  }
+
+  .container-img img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .redes {
+    gap: 15px;
+  }
+
+  .redes a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-banner {
+    max-width: 550px;
+    padding: 60px 50px;
+  }
+
+  .container-banner h1 {
+    font-size: 48px;
+  }
+
+  .container-img img {
+    width: 210px;
+    height: 210px;
   }
 }
