@@ -8,7 +8,7 @@
 
 body {
   background-color: #f5f5f5;
-  color: #333;
+  color: #111111;
 }
 
 .fondo-inicio {
@@ -20,13 +20,14 @@ body {
   object-fit: cover;    
   z-index: -1;           
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: rgba(106, 165, 147, 0.8); 
-  color: #0a0a0a;
+  background-color: rgba(14, 13, 13, 2.8); 
+  color: #f1e8e8;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -34,28 +35,35 @@ body {
 
 .header .logo a {
   text-decoration: none;
-  color: #0c0c0c;
-  font-size: 1.5rem;
+  color: #ddd5d5;
+  font-size: 2.7rem;
   font-weight: bold;
   font-family: georgia, serif;
   font-style: italic;
 }
+
 .nav-menu ul {
   display: flex;
   list-style: none;
   font-family: georgia, serif;
   font-style: italic;
 }
+
 .nav-menu ul li a {
   text-decoration: none;
   color: #fff;
   margin-left: 30px;
   transition: color 0.3s;
+  font-family: georgia, serif;
+  font-style: italic;
 }
 
-.nav-menu ul li a:hover {
-  color: #5fece1;
+.nav-menu ul li a:hover,
+.nav-menu ul li a.active {
+  color: #ff6600; 
+  font-weight: 600;
 }
+
 .nav-icon {
   display: none;
   font-size: 1.5rem;
@@ -65,6 +73,7 @@ body {
 #nav-toggle {
   display: none;
 }
+
 .hero-section {
   display: flex;
   justify-content: center;
@@ -78,42 +87,46 @@ body {
   max-width: 1200px;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(81, 206, 164, 0.85); 
+  background-color: rgba(66, 60, 60, 0.85);
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(20, 20, 20, 0.2);
+  box-shadow: 0 5px 15px rgba(124, 6, 6, 0.2);
 }
+
 .hero-image img {
   width: 300px;
   border-radius: 50%;
   margin-right: 50px;
   transition: transform 0.3s;
 }
+
 .hero-image img:hover {
   transform: scale(1.05);
 }
+
 .hero-text h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-/* Redes sociales */
 .hero-socials a {
   text-decoration: none;
-  color: #3e638d;
-  margin-right: 15px;
+  color: #cc6e02;
+  margin-right: 16px;
   font-size: 1.2rem;
   transition: color 0.3s;
 }
 
 .hero-socials a:hover {
-  color: #111111;
+  color: #ec582b;
 }
+
 .footer {
   background-color: rgba(8, 8, 8, 0.9);
   color: #fff;
@@ -123,56 +136,42 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-menu,
-  .nav-menu * {
-    -webkit-tap-highlight-color: transparent;
+  .header {
+    position: relative;
   }
+
   .nav-menu {
     position: absolute;
     top: 70px;
     right: 0;
-    width: 250px;                 
+    width: 210px;
     background-color: rgba(15, 15, 15, 0.95);
     display: none;
     flex-direction: column;
-    text-align: center;
-    align-items: center;           
-    padding: 30px 0;               
-    gap: 20px;                    
+    align-items: center;
+    padding: 15px 0;
+    gap: 10px;
+    border-radius: 5px;
   }
 
   .nav-menu ul {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
     margin: 0;
-  }
-
-  .nav-menu ul li {
-    width: 100%;
+    padding: 0;
   }
 
   .nav-menu ul li a {
-    display: block;               
-    padding: 15px 0;             
-    font-size: 1.2rem;
+    display: block;
+    padding: 12px 0;
+    font-size: 1.1rem;
     color: #fff;
-    text-decoration: none;
-  }
-
-  .nav-menu ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-  }
-  .nav-menu ul li a:focus,
-  .nav-menu ul li a:active{
-    background: none;
-    outline: none;
+    text-align: center;
   }
 
   .nav-icon {
     display: block;
-    font-size: 1.5rem;
     cursor: pointer;
   }
 

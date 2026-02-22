@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.fondo-inicio {
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    
+  z-index: -1;           
+}
+
+.header {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  position: relative;
+  z-index: 10;
+}
+
+.header .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-family:  georgia, serif;
+  font-style: italic;
+  font-size: 2.9rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  font-family: georgia, serif;
+  font-style: italic;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+  color: #ff6600;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: #ece4e4;
+}
+
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #edf1f1;
+}
+
+.profile-info {
+  flex: 1;
+  max-width: 700px;
+}
+
+.profile-info h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.personal-data h2 {
+  font-family: 'times new roman', cursive;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.personal-data ul {
+  list-style: none;
+}
+
+.personal-data ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.interests h2 {
+  font-family: 'Righteous', cursive;
+  margin: 20px 0 15px 0;
+  font-size: 1.8rem;
+}
+
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.interest-card {
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s;
+}
+
+.interest-card:hover {
+  transform: translateY(-5px);
+}
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.footer .social-links {
+  margin-top: 15px;
+}
+
+.footer .social-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #ff6600;
+}
+
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-info h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(26,26,26,0.95);
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-info h1 {
+    font-size: 1.7rem;
+  }
+
+  .profile-info p {
+    font-size: 1rem;
+  }
+
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .header {
+    padding: 15px 20px;
+  }
+}
