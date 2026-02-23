@@ -14,7 +14,9 @@ html {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), 
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, rgba(103, 185, 233, 0.8), rgba(30,35,38,1)), 
               url(../img/fondo.jpg);
   background-size: cover;
   background-position: center;
@@ -27,7 +29,7 @@ body {
    HEADER FIJO EN LA PARTE SUPERIOR
    ═══════════════════════════════════ */
 .container-header {
-  background: black;
+  background:  #15272f;
   position: fixed;
   width: 100%;
   top: 0;
@@ -47,7 +49,7 @@ body {
 .logo a {
   font-family: 'Righteous', cursive;
   font-size: 36px;
-  color: #1cb698;
+  color: #71d4ff;
   text-decoration: none;
 }
 
@@ -68,7 +70,7 @@ body {
 }
 
 .nav ul li a:hover {
-  color: #1cb698;
+  color: #71d4ff;
 }
 
 /* ═══════════════════════════════════
@@ -82,7 +84,7 @@ body {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #1cb698;
+  color: #71d4ff;
   margin-left: auto;
   border-radius: 20px;
 }
@@ -91,7 +93,7 @@ body {
    SECCIÓN PRINCIPAL (HERO)
    ═══════════════════════════════════ */
 .inicio {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +101,12 @@ body {
 }
 
 .container-banner {
-  background-color: black;
+  background: linear-gradient(
+        135deg,
+        #0f2027,
+        #1b3a4b,
+        #203a43
+    );
   padding: 30px;
   max-width: 450px;
   margin: auto;
@@ -109,7 +116,7 @@ body {
 
 .container-img img {
   margin-top: 40px;
-  border: 10px solid #1cb698;
+  border: 10px solid #71d4ff;
   width: 80%;
   border-radius: 100%;
   display: block;
@@ -152,8 +159,8 @@ body {
 }
 
 .redes a:hover {
-  background: #1cb698;
-  border-color: #1cb698;
+  background: #71d4ff;
+  border-color: #71d4ff;
   transform: scale(1.1);
 }
 
@@ -161,7 +168,8 @@ body {
    FOOTER
    ═══════════════════════════════════ */
 footer {
-  background-color: black;
+  margin-top: auto;
+  background-color: #15272f;
   color: #fff;
   padding: 15px 0;
   text-align: center;

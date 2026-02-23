@@ -4,7 +4,7 @@
    HEADER FIJO EN LA PARTE SUPERIOR
    ═══════════════════════════════════ */
 .container-header {
-  background: black;
+  background: #15272f;
   position: fixed;
   width: 100%;
   top: 0;
@@ -24,7 +24,7 @@
 .logo a {
   font-family: 'Righteous', cursive;
   font-size: 36px;
-  color: #1cb698;
+  color: #71d4ff;
   text-decoration: none;
 }
 
@@ -98,7 +98,7 @@
    FOOTER
    ═══════════════════════════════════ */
 footer {
-  background-color: black;
+  background-color: #15272f;
   color: #fff;
   padding: 15px 0;
   text-align: center;

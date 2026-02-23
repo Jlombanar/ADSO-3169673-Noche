@@ -1,115 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-body {
+/* RESET */
+*{
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+    box-sizing: border-box;
 }
 
-#menu-toggle {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #e01d16;
-  margin-left: auto;
-  border-radius: 20px;
-}
-
-
-.sobremi { 
-  color: white;   
-  padding: 100px 20px;
-  text-align: center;
-  min-height: 100vh; 
-}
-
-.sobremi .container-section{
-    max-width: 1100px;
-    margin: auto;
-}
-
-.sobremi h2{
-    font-size: 48px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.sobremi .fila{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.sobremi .fila .col{
-    flex: 1;
-    min-width: 300px;
-}
-
-.sobremi .fila .col h3{
-    font-size: 28px;
-    margin-bottom: 25px;
-}
-
-.sobremi h3{
-    align-items: center;
-}
-
-.sobremi .fila .col ul{
-    list-style: none;
-}
-
-.sobremi .fila .col ul li{
-    margin: 12px 0;
-}
-
-.sobremi .fila .col ul strong{
-    display: inline-block;
-    color: #1cb698;
-    width: 120px; 
-    text-align: right;
-}
-
-/* Sección de intereses */
-.sobremi .fila .col .container-interes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.sobremi .fila .col .container-interes .interes{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(171, 165, 165);
-    border-radius: 10px;
+body { 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
+    min-height: 100vh;
+    font-family: 'Work Sans', sans-serif;
 
-.sobremi .fila .col .container-interes .interes:hover{
-    background-color: #1cb698;
-    transform: scale(1.1);
+    background: linear-gradient(
+        135deg,
+        #0f2027,
+        #1b3a4b,
+        #203a43
+    );
+
+    background-attachment: fixed; 
+    color: #f1f5f9;
 }
 
 /* ═══════════════════════════════════
-   HEADER FIJO EN LA PARTE SUPERIOR
-   ═══════════════════════════════════ */
+   HEADER
+═══════════════════════════════════ */
+
 .container-header {
-  background: black;
+  background: #15272f;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   position: fixed;
   width: 100%;
   top: 0;
@@ -129,13 +51,11 @@ body {
 .logo a {
   font-family: 'Righteous', cursive;
   font-size: 36px;
-  color: #1cb698;
+  color: #71d4ff;
   text-decoration: none;
 }
 
-/* ═══════════════════════════════════
-   MENÚ DE NAVEGACIÓN
-   ═══════════════════════════════════ */
+/* NAV */
 .nav ul {
   display: flex;
   list-style: none;
@@ -143,19 +63,17 @@ body {
 }
 
 .nav ul li a {
-  color: #fff;
+  color: #f1f5f9;
   text-decoration: none;
   padding: 5px;
   transition: 0.3s;
 }
 
 .nav ul li a:hover {
-  color: #1cb698;
+  color: #71d4ff;
 }
 
-/* ═══════════════════════════════════
-   MENÚ RESPONSIVE (sin JavaScript)
-   ═══════════════════════════════════ */
+/* MENU RESPONSIVE */
 #menu-toggle {
   display: none;
 }
@@ -164,29 +82,145 @@ body {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #1cb698;
+  color: #71d4ff;
   margin-left: auto;
-  border-radius: 20px;
 }
 
+/* ═══════════════════════════════════
+   SECCIÓN SOBRE MI
+═══════════════════════════════════ */
+
+.sobremi { 
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.sobremi .container-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+    .sobremi h2{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+}
+
+.sobremi p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin-bottom: 40px;
+}
+
+.sobremi .fila{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.sobremi .fila .col{
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* DATOS PERSONALES */
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobremi .fila .col ul strong{
+    color: #71d4ff;
+}
+
+/* INTERESES */
+
+.sobremi .fila .col .container-interes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sobremi .fila .col .container-interes .interes{
+    width: 100px;
+    height: 100px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.02)
+    );
+
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: .3s ease;
+}
+
+.sobremi .fila .col .container-interes .interes i{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.sobremi .fila .col .container-interes .interes:hover{
+    background:#71d4ff;
+    transform: translateY(-5px) scale(1.05);
+}
 
 /* ═══════════════════════════════════
-   REDES SOCIALES
-   ═══════════════════════════════════ */
+   FOOTER
+═══════════════════════════════════ */
+
+footer {
+  background: #15272f;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
 .redes {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
 }
 
 .redes a {
-  color: #fff;
+  color: #f1f5f9;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 50%;
   width: 42px;
   height: 42px;
@@ -195,44 +229,50 @@ body {
 }
 
 .redes a:hover {
-  background: #1cb698;
-  border-color: #1cb698;
-  transform: scale(1.1);
+  background: #71d4ff;
+  border-color: transparent;
+  transform: translateY(-3px);
 }
 
 /* ═══════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════ */
-footer {
-  background-color: black;
-  color: #fff;
-  padding: 15px 0;
-  text-align: center;
-  width: 100%;
-}
+   RESPONSIVE
+═══════════════════════════════════ */
 
-/* Responsive */
 @media (max-width: 768px) {
+
   .menu-icon {
     display: block;
   }
 
   .nav ul {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    animation: fadeIn .3s ease;
     display: none;
     flex-direction: column;
-    background-color: #0b5694;
+    background: #1b3a4b;
     position: absolute;
     top: 60px;
     right: 0;
-    width: 180px;
+    width: 200px;
     padding: 20px;
-    box-shadow: -2px 0 8px rgba(184, 56, 56, 0.3);
     border-radius: 0 0 0 10px;
   }
 
-  /* Mostrar menú cuando el checkbox está marcado */
   #menu-toggle:checked + .menu-icon + .nav ul {
     display: flex;
+  }
+
+  .sobremi h2{
+    font-size: 2.2rem;
+  }
+
+  .sobremi p{
+    font-size: 1rem;
+  }
+
+  .sobremi .fila{
+    flex-direction: column;
     align-items: center;
   }
+
 }

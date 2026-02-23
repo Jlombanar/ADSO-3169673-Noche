@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
+*{
+  margin: 0;
+  padding: 0%;
+}
+
 /* ═══════════════════════════════════
    HEADER FIJO EN LA PARTE SUPERIOR
    ═══════════════════════════════════ */
 .container-header {
-  background: black;
+  background: #203a43;
   position: fixed;
   width: 100%;
   top: 0;
@@ -24,7 +29,7 @@
 .logo a {
   font-family: 'Righteous', cursive;
   font-size: 36px;
-  color: #1cb698;
+  color: #71d4ff;
   text-decoration: none;
 }
 
@@ -98,7 +103,7 @@
    FOOTER
    ═══════════════════════════════════ */
 footer {
-  background-color: black;
+  background-color: #203a43;
   color: #fff;
   padding: 15px 0;
   text-align: center;
