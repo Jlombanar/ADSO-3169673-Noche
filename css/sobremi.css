@@ -1,108 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap');
 
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+/* FONDO UNIFICADO */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Outfit', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background: linear-gradient(-45deg, #000000, #000000c5, #000000be, #000000f2);
+    background-size: 400% 400%;
+    color: #fff8f8;
+    overflow-x: hidden;
+    
 }
 
-.sobremi { 
-  color: white;   
-  padding: 100px 20px;
-  text-align: center;
-  min-height: 100vh; 
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.sobremi .container-section{
-    max-width: 1100px;
-    margin: auto;
-}
-
-.sobremi h2{
-    font-size: 48px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.sobremi .fila{
+/* SECCIÓN SOBRE MÍ */
+.sobremi {
+    padding: 100px 20px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.sobremi .fila .col{
-    flex: 1;
-    min-width: 300px;
-}
-
-.sobremi .fila .col h3{
-    font-size: 28px;
-    margin-bottom: 25px;
-}
-
-.sobremi .fila .col ul{
-    list-style: none;
-}
-
-.sobremi .fila .col ul li{
-    margin: 12px 0;
-}
-
-.sobremi .fila .col ul strong{
-    display: inline-block;
-    color: #1cb698;
-    width: 120px; 
-    text-align: right;
-}
-
-/* Sección de intereses */
-.sobremi .fila .col .container-interes{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.container-section {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sobremi h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(to right, #2acbe4, #77d9f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 5px 15px rgba(236, 236, 236, 0.2));
+}
+section p{
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi .fila {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.sobremi .fila .col {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px) saturate(160%);
+    -webkit-backdrop-filter: blur(15px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    padding: 40px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sobremi .fila .col:hover {
+    transform: translateY(-12px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(42, 203, 228, 0.3);
+}
+
+.sobremi .fila .col h3 {
+    font-size: 24px;
+    color: #2cd3ec;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobremi .fila .col ul li {
+    margin: 18px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 8px;
+}
+
+.sobremi .fila .col ul strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.container-interes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.sobremi .fila .col .container-interes .interes{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(171, 165, 165);
-    border-radius: 10px;
+.interes {
+    background: rgba(255, 255, 255, 0.05);
+    aspect-ratio: 1/1;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    font-size: 13px;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
 }
 
-.sobremi .fila .col .container-interes .interes:hover{
-    background-color: #1cb698;
-    transform: scale(1.1);
+.interes:hover {
+    background: linear-gradient(135deg, #00ddff, #818cf8);
+    color: #0f172a;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(34, 211, 238, 0.5);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
+.interes span {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
 
-  .nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.5); 
-    position: absolute;
-    top: 60px;
-    right: 20px;
-  }
+/* ═══════════════════════════════════
+   RESPONSIVE (AÑADIDO SIN DAÑAR NADA)
+   ═══════════════════════════════════ */
 
-  #menu-toggle:checked ~ .nav ul {
-    display: flex;
-  }
+/* Tablets y Laptops pequeñas */
+@media screen and (max-width: 992px) {
+    .sobremi .fila {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares (Modo móvil) */
+@media screen and (max-width: 768px) {
+    .sobremi {
+        padding: 80px 15px;
+    }
+
+    .sobremi h2 { 
+        font-size: 2.2rem; 
+        margin-bottom: 40px;
+    }
+
+    /* Las tarjetas ocupan todo el ancho */
+    .sobremi .fila { 
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .sobremi .fila .col { 
+        padding: 25px; 
+    }
+
+    /* Ajuste de los cuadritos de intereses para móviles */
+    .container-interes {
+        grid-template-columns: repeat(3, 1fr); /* Mantenemos 3 pero más pequeños */
+        gap: 10px;
+    }
+
+    .interes {
+        font-size: 11px;
+    }
+
+    /* Estilo para el NAV móvil (Si usas el menú de hamburguesa) */
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        transition: 0.4s ease;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Cuando el menú esté abierto */
+    #menu-toggle:checked ~ .nav {
+        right: 0;
+    }
+
+    /* Icono de hamburguesa visible */
+    .menu-icon {
+        display: block;
+        z-index: 101;
+    }
+}
+footer {
+  background-color: #0a0a0a;
+  color: #666;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    .container-interes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para que no se vea apretado */
+    }
+    
+    .sobremi .fila .col ul li {
+        flex-direction: column; /* El texto se pone uno debajo del otro */
+        align-items: flex-start;
+        gap: 5px;
+    }
 }

@@ -1,0 +1,248 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&family=Righteous&family=Work+Sans:wght@300;400;600&display=swap');
+
+/* Reset General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #0f172a, #0000009e, #000000, #000000e1);
+    background-size: 400% 400%;
+      color: #fff;
+    overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ═══════════════════════════════════
+   HEADER 
+   ═══════════════════════════════════ */
+.container-header {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo a {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    background: linear-gradient(to right, #00ffff, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+/* Hamburguesa Logic */
+#menu-toggle { display: none; }
+.menu-icon { display: none; cursor: pointer; font-size: 24px; color: #00ffff; }
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover { color: #00ffff; }
+
+/* ═══════════════════════════════════
+   SECCIÓN SKILLS 
+   ═══════════════════════════════════ */
+.skills {
+    padding: 120px 20px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-section {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.container-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    text-align: center;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #00ffff, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.col {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 35px;
+    transition: 0.4s ease;
+}
+
+.col:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.col h3 {
+    font-size: 22px;
+    color: #00ffff;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+/* ═══════════════════════════════════
+   LÓGICA DE BARRAS (Nuevas Reglas)
+   ═══════════════════════════════════ */
+
+/* Asegura que el contenedor de cada skill use Flexbox en columna */
+.col .skills {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+/* Fuerza a que el nombre de la skill ocupe toda la línea */
+.col .skills span {
+    display: block; 
+    width: 100%;
+    margin-bottom: 5px; 
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Estilo de la barra contenedora */
+.barra-skills {
+    width: 100%; 
+    height: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px; 
+    overflow: hidden;
+    position: relative;
+}
+
+/* La barra de color interna */
+.progreso {
+    height: 100%;
+    background: linear-gradient(90deg, #00ffff, #818cf8);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: width 1.5s ease-in-out;
+}
+
+/* El texto del porcentaje dentro de la barra */
+.progreso span {
+    font-size: 10px;
+    font-weight: 800;
+    color: #000;
+    margin-right: 10px;
+    margin-bottom: 0 !important; 
+    width: auto !important; 
+}
+
+/* ═══════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════ */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a {
+    color: #fff;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    background: #00ffff;
+    color: #000;
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* ═══════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════ */
+@media screen and (max-width: 768px) {
+    .menu-icon { display: block; }
+    
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(15px);
+        transition: 0.5s;
+        padding-top: 80px;
+        border-left: 1px solid rgba(0, 255, 255, 0.2);
+    }
+
+    #menu-toggle:checked ~ .nav { right: 0; }
+    
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .fila { grid-template-columns: 1fr; }
+}
