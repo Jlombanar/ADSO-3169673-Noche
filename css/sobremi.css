@@ -168,7 +168,7 @@ body {
 
 footer {
   background: #000;
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
   border-top: 1px solid var(--color-primary);
 }
@@ -176,7 +176,7 @@ footer {
 footer .redes {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 footer .redes a {
@@ -199,12 +199,29 @@ footer .redes a:hover {
   transform: translateY(-3px);
 }
 
-.menu-icon {
-  display: none;
-  color: var(--color-text);
-  font-size: 24px;
-  cursor: pointer;
-}
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block; /* Mostrar hamburguesa */
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 20px; /* Siempre a la derecha */
+    z-index: 100;
+  }
+    .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(17, 24, 39, 0.95);
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px; /* Desplegar desde la derecha */
+    width: 250px;
+    z-index: 50;
+  }}
 
 #menu-toggle {
   display: none;
@@ -236,7 +253,47 @@ footer .redes a:hover {
   }
 }
 
-/* CELULARES */
+/* ===================== RESPONSIVE ===================== */
+
+/* 1. Tablets grandes y laptops pequeñas (1024px - 769px) */
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block; /* Mostrar hamburguesa */
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  /* Ocultar menú normal hasta activar hamburguesa */
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(17, 24, 39, 0.95);
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    z-index: 50;
+  }
+
+  /* Mostrar menú al marcar checkbox */
+  #menu-toggle:checked ~ .nav ul {
+    display: flex;
+  }
+
+  /* Ajustes tipográficos para tablets */
+  .sobremi h2 {
+    font-size: 40px;
+  }
+
+  .sobremi .fila {
+    gap: 30px;
+  }
+}
+
+/* 2. Tablets y celulares medianos (768px - 481px) */
 @media (max-width: 768px) {
   .sobremi h2 {
     font-size: 36px;
@@ -259,7 +316,7 @@ footer .redes a:hover {
   }
 }
 
-/* CELULARES PEQUEÑOS */
+/* 3. Celulares pequeños (480px y menos) */
 @media (max-width: 480px) {
   .sobremi h2 {
     font-size: 30px;
@@ -280,11 +337,29 @@ footer .redes a:hover {
   }
 
   body {
-    background-attachment: scroll; /* fix iOS */
+    background-attachment: scroll; /* Fix para iOS */
   }
 
   .nav ul {
     top: 50px;
     right: 5px;
+  }
+}
+
+/* 4. Ajustes generales para la hamburguesa en PC */
+@media (min-width: 1025px) {
+  .menu-icon {
+    display: none; /* Siempre oculta en PC */
+  }
+
+  .nav ul {
+    display: flex; /* Menú visible en PC */
+    flex-direction: row;
+    position: static;
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    width: auto;
   }
 }
