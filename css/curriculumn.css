@@ -45,6 +45,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 20px;
+position:relative;
 }
 
 .logo a{
@@ -56,7 +57,7 @@ background:linear-gradient(135deg,#d4af37,#f5c542);
 text-decoration:none;
 }
 
-/* MENÚ */
+/* MENÚ DESKTOP */
 .nav ul{
 display:flex;
 list-style:none;
@@ -93,8 +94,16 @@ transform:translateX(-50%);
 width:100%;
 }
 
-#menu-toggle{display:none;}
-.menu-icon{display:none;}
+#menu-toggle{
+display:none;
+}
+
+.menu-icon{
+display:none;
+font-size:24px;
+cursor:pointer;
+color:#d4af37;
+}
 
 /* ═══════════════════════════════════
 SECCIÓN CURRICULUM
@@ -125,7 +134,6 @@ background:linear-gradient(135deg,#d4af37,#f5c542);
 -webkit-text-fill-color:transparent;
 }
 
-/* SUBTÍTULO */
 .subtitle{
 text-align:center;
 max-width:700px;
@@ -145,7 +153,6 @@ gap:60px;
 position:relative;
 }
 
-/* Línea central animada */
 .timeline::before{
 content:"";
 position:absolute;
@@ -163,7 +170,6 @@ from{height:0%;}
 to{height:100%;}
 }
 
-/* Columnas */
 .timeline-column{
 flex:1;
 }
@@ -175,14 +181,9 @@ font-size:24px;
 letter-spacing:1px;
 }
 
-/* Items */
 .timeline-item{
-position:relative;
 margin-bottom:40px;
 }
-
-/* ELIMINADAS LAS BOLITAS */
-/* (antes estaban aquí los ::before) */
 
 .content{
 background:rgba(0,0,0,.52);
@@ -222,9 +223,7 @@ line-height:1.6;
 opacity:.85;
 }
 
-/* ═══════════════════════════════════
-PERFIL PROFESIONAL
-═══════════════════════════════════ */
+/* PERFIL PROFESIONAL */
 .professional-profile{
 margin-top:60px;
 padding:50px;
@@ -258,26 +257,115 @@ font-size:15px;
 100%{opacity:1; transform:translateY(0);}
 }
 
-/* Responsive */
+/* ═══════════════════════════════════
+RESPONSIVE COMPLETO
+═══════════════════════════════════ */
 @media screen and (max-width:900px){
 
+/* HEADER */
+.menu-icon{
+display:block;
+margin-left:auto;
+}
+
+/* MENÚ DESPLEGABLE TIPO TARJETA */
+.nav ul{
+display:none;
+flex-direction:column;
+background-color:#000000;
+position:absolute;
+top:60px;
+right:15px;
+width:200px;
+padding:20px;
+box-shadow:-2px 0 15px rgba(0,0,0,0.5);
+border-radius:20px;
+border:1px solid #d4af37;
+gap:20px;
+}
+
+#menu-toggle:checked + .menu-icon + .nav ul{
+display:flex;
+align-items:center;
+}
+
+/* SECCIÓN */
+.curriculum-section{
+padding:120px 15px 60px;
+}
+
+.container-section{
+padding:35px 25px;
+border-radius:25px;
+}
+
+/* TÍTULO */
+.curriculum-section h2{
+font-size:34px;
+}
+
+.subtitle{
+font-size:14px;
+margin-bottom:40px;
+}
+
+/* TIMELINE */
 .timeline{
 flex-direction:column;
+gap:30px;
 }
 
+/* Línea vertical adaptada */
 .timeline::before{
-left:8px;
+left:12px;
+width:2px;
+}
+
+/* Columnas */
+.timeline-column{
+width:100%;
+padding-left:30px;
+}
+
+/* Títulos de columna */
+.timeline-column h3{
+font-size:20px;
+margin-bottom:25px;
+}
+
+/* Items */
+.timeline-item{
+margin-bottom:25px;
+}
+
+/* Tarjetas */
+.content{
+padding:20px;
+border-radius:18px;
+}
+
+.content h4{
+font-size:16px;
+}
+
+.content p{
+font-size:13px;
+}
+
+/* PERFIL PROFESIONAL */
+.professional-profile{
+padding:30px 20px;
+margin-top:40px;
+border-radius:20px;
+}
+
+.professional-profile h3{
+font-size:20px;
+}
+
+.professional-profile p{
+font-size:14px;
+line-height:1.7;
 }
 
 }
-
-/* FOOTER */
-footer{
-background:black;
-color:#fff;
-padding:20px 0;
-text-align:center;
-border-top:1px solid rgba(212,175,55,0.2);
-}
-
-
