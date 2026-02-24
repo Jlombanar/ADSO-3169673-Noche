@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mis Habilidades | Juan David Angarita</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/skill.css">
 </head>
 <body>
-    
+
+<header>
+    <nav class="nav-container">
+        <input type="checkbox" id="menu-check">
+        
+        <label for="menu-check" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre Mí</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="skill.html" class="active">Skills</a></li>
+            <li><a href="protafolio.html">Portafolio</a></li>
+            <li><a href="contactenos.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="skills-container">
+    <div class="skills-header">
+        <span class="subtitle">Mi Stack Tecnológico</span>
+        <h2>Habilidades</h2>
+        <p>Conocimientos técnicos enfocados en el desarrollo web y gestión de bases de datos.</p>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+            <span class="percent">90%</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+            <span class="percent">85%</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+            <span class="percent">70%</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 30%;"></div>
+            </div>
+            <span class="percent">Básico (En aprendizaje)</span>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 - Juan David Angarita</p>
+</footer>
+
 </body>
 </html>
