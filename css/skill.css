@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+/* ═══════════════════════════════════
+RESET
+═══════════════════════════════════ */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Work Sans', sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+min-height:100vh;
+background:linear-gradient(to top, rgba(15,15,15,.9), rgba(20,20,20,1)),
+url(../img/fondo.png);
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:#fff;
+}
+
+/* ═══════════════════════════════════
+HEADER
+═══════════════════════════════════ */
+.container-header{
+background:rgba(0,0,0,0.95);
+backdrop-filter:blur(10px);
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index:100;
+border-bottom:1px solid rgba(212,175,55,0.15);
+}
+
+.container-header header{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo a{
+font-family:'Righteous', cursive;
+font-size:36px;
+background:linear-gradient(135deg,#d4af37,#f5c542);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+text-decoration:none;
+}
+
+/* ═══════════════════════════════════
+MENÚ DESKTOP
+═══════════════════════════════════ */
+.nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.nav ul li a{
+color:#fff;
+text-decoration:none;
+padding:5px;
+position:relative;
+transition:.3s ease;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active{
+color:#d4af37;
+}
+
+.nav ul li a::after{
+content:"";
+position:absolute;
+left:50%;
+bottom:-4px;
+width:0%;
+height:2px;
+background:#d4af37;
+transition:.3s ease;
+transform:translateX(-50%);
+}
+
+.nav ul li a:hover::after,
+.nav ul li a.active::after{
+width:100%;
+}
+
+/* Checkbox siempre oculto */
+#menu-toggle{
+display:none;
+}
+
+/* Ícono oculto en desktop */
+.menu-icon{
+display:none;
+font-size:24px;
+cursor:pointer;
+color:#d4af37;
+margin-left:auto;
+}
+
+/* ═══════════════════════════════════
+SECCIÓN SKILLS
+═══════════════════════════════════ */
+.skills-section{
+padding:130px 20px 80px;
+animation:fadeUp 1.2s ease forwards;
+}
+
+.container-section{
+max-width:1100px;
+margin:auto;
+background: rgba(0,0,0,0.50); /* MÁS TRANSPARENTE */
+padding:60px;
+border-radius:35px;
+border:1px solid rgba(212,175,55,.25);
+backdrop-filter: blur(12px);
+box-shadow:0 25px 70px rgba(0,0,0,.5);
+}
+
+.skills-section h2{
+font-size:48px;
+font-family:'Righteous', cursive;
+text-align:center;
+margin-bottom:60px;
+background:linear-gradient(135deg,#d4af37,#f5c542);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.fila{
+display:flex;
+flex-wrap:wrap;
+gap:60px;
+}
+
+.col{
+flex:1;
+min-width:300px;
+}
+
+.col h3{
+color:#d4af37;
+margin-bottom:35px;
+font-size:24px;
+letter-spacing:1px;
+}
+
+/* ═══════════════════════════════════
+SKILLS DISEÑO ELEGANTE
+═══════════════════════════════════ */
+
+.skill-item{
+margin-bottom:35px;
+}
+
+.skill-item span{
+display:block;
+margin-bottom:10px;
+font-weight:600;
+font-size:15px;
+letter-spacing:.5px;
+}
+
+/* Barra base */
+.barra{
+width:100%;
+height:8px;
+background:rgba(255,255,255,.08);
+border-radius:50px;
+position:relative;
+overflow:visible;
+}
+
+/* Barra progreso */
+.progreso{
+height:100%;
+background:linear-gradient(90deg,#b8860b,#d4af37);
+border-radius:50px;
+position:relative;
+animation:loadBar 1.5s ease forwards;
+}
+
+/* Burbuja pequeña y sobria */
+.progreso span{
+position:absolute;
+right:-18px;
+top:50%;
+transform:translateY(-50%);
+width:36px;
+height:36px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:11px;
+font-weight:700;
+color:#111;
+background:#d4af37;
+box-shadow:0 4px 10px rgba(0,0,0,.35);
+}
+
+/* Animación carga */
+@keyframes loadBar{
+0%{ width:0; }
+}
+
+/* Animación sección */
+@keyframes fadeUp{
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Anchuras */
+.js{ width:75%; }
+.html{ width:89%; }
+.node{ width:90%; }
+.react{ width:90%; }
+
+.comunicacion{ width:75%; }
+.equipo{ width:89%; }
+.manager{ width:90%; }
+.aura{ width:100%; }
+
+/* ═══════════════════════════════════
+FOOTER
+═══════════════════════════════════ */
+footer {
+background-color: black;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+width: 100%;
+border-top: 1px solid #d4af37;
+}
+
+/* ═══════════════════════════════════
+RESPONSIVE
+═══════════════════════════════════ */
+@media screen and (max-width:768px){
+
+.menu-icon{
+display:block;
+}
+
+.nav ul{
+display:none;
+flex-direction:column;
+background:#000;
+position:absolute;
+top:60px;
+right:0;
+width:200px;
+padding:20px;
+border-radius:20px;
+border:1px solid #d4af37;
+box-shadow:-2px 0 15px rgba(0,0,0,0.4);
+}
+
+#menu-toggle:checked + .menu-icon + .nav ul{
+display:flex;
+align-items:center;
+}
+
+.fila{
+flex-direction:column;
+gap:40px;
+}
+
+}
+
