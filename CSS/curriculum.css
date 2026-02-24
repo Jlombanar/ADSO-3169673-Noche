@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Segoe UI", system-ui, sans-serif;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
     background: #0f1115;
     color: #ffffff;
     line-height: 1.6;
@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    flex-wrap: wrap;
 }
 
 .logo a {
@@ -33,7 +34,8 @@ body {
     color: #ffffff;
     font-weight: 600;
     font-size: 1.2rem;
-    transition: 0.2s ease;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
 }
 
 .logo a:hover {
@@ -44,6 +46,7 @@ body {
     list-style: none;
     display: flex;
     gap: 28px;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -51,7 +54,7 @@ body {
     color: #b0b3b8;
     font-size: 0.95rem;
     position: relative;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 .nav-links a::after {
@@ -62,7 +65,7 @@ body {
     width: 0%;
     height: 2px;
     background: #00bfff;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -77,21 +80,73 @@ body {
     color: #00bfff;
 }
 
-/* INTRO */
-
 .intro {
     padding: 60px 40px;
     max-width: 900px;
 }
 
 .intro h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin-bottom: 15px;
 }
 
 .intro p {
     color: #b0b3b8;
     max-width: 650px;
+}
+
+.action-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 14px;
+    background: #00bfff;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255,255,255,0.2);
+    transition: 0.4s ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,191,255,0.5);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 2px solid #00bfff;
+    color: #00bfff;
+}
+
+.btn.secondary:hover {
+    background: #00bfff;
+    color: #000;
 }
 
 .main-layout {
@@ -144,7 +199,7 @@ body {
 
 .timeline-content:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .timeline-content header {
@@ -177,19 +232,6 @@ body {
     color: #b0b3b8;
 }
 
-.education-related {
-    margin-top: 20px;
-    padding: 15px;
-    background: #1a1d24;
-    border-radius: 10px;
-    font-size: 0.85rem;
-    transition: 0.3s ease;
-}
-
-.education-related:hover {
-    background: rgba(0,191,255,0.08);
-}
-
 .education-summary {
     display: flex;
     flex-direction: column;
@@ -197,7 +239,7 @@ body {
 }
 
 .education-summary h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -214,31 +256,6 @@ body {
     background: rgba(0,191,255,0.08);
 }
 
-
-button,
-.btn {
-    padding: 12px 22px;
-    border-radius: 14px;
-    border: none;
-    cursor: pointer;
-    background: #00bfff;
-    color: #000;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-button:hover,
-.btn:hover {
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,191,255,0.4);
-}
-
-button:active,
-.btn:active {
-    transform: scale(0.96);
-}
-
-
 .footer {
     text-align: center;
     padding: 20px;
@@ -247,7 +264,6 @@ button:active,
     font-size: 0.85rem;
     color: #b0b3b8;
 }
-
 
 @media (max-width: 1024px) {
     .main-layout {
@@ -263,7 +279,6 @@ button:active,
     }
 
     .nav-links {
-        flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
@@ -287,5 +302,10 @@ button:active,
     .timeline-marker {
         width: 10px;
         height: 10px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
