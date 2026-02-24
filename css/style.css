@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
+/* 🎨 VARIABLES DE COLOR */
+:root {
+--color-primary: #6C63FF;
+--color-secondary: #00D4FF;
+--color-accent: #FF7A00;
+--color-background: #0F172A;
+--color-surface: #111827;
+--color-text: #E5E7EB;
+--color-text-muted: #9CA3AF;
+}
+
 /* Reset básico y configuración de fuentes */
 * {
 box-sizing: border-box;
@@ -14,20 +25,24 @@ scroll-behavior: smooth;
 
 body {
 min-height: 100vh;
-background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), 
-            url(../img/fondo.jpg);
+background: linear-gradient(
+      to top,
+      rgba(15, 23, 42, 0.85),
+      rgba(15, 23, 42, 1)
+   ),
+   url(../img/fondo.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
-color: #fff;
+color: var(--color-text);
 }
 
 /* ═══════════════════════════════════
-   HEADER FIJO EN LA PARTE SUPERIOR
+   HEADER FIJO
    ═══════════════════════════════════ */
 .container-header {
-background: black;
+background: #000;
 position: fixed;
 width: 100%;
 top: 0;
@@ -47,7 +62,7 @@ padding: 15px 20px;
 .logo a {
 font-family: 'Righteous', cursive;
 font-size: 36px;
-color: #4823ed;
+color: var(--color-primary);
 text-decoration: none;
 }
 
@@ -61,18 +76,19 @@ gap: 20px;
 }
 
 .nav ul li a {
-color: #fff;
+color: var(--color-text);
 text-decoration: none;
 padding: 5px;
 transition: 0.3s;
 }
 
 .nav ul li a:hover {
-color: #4823ed;
+color: var(--color-secondary);
+text-shadow: 0 0 8px var(--color-secondary);
 }
 
 /* ═══════════════════════════════════
-   MENÚ RESPONSIVE (sin JavaScript)
+   MENÚ RESPONSIVE
    ═══════════════════════════════════ */
 #menu-toggle {
 display: none;
@@ -82,13 +98,13 @@ display: none;
 display: none;
 font-size: 24px;
 cursor: pointer;
-color: #4823ed;
+color: var(--color-primary);
 margin-left: auto;
 border-radius: 20px;
 }
 
 /* ═══════════════════════════════════
-   SECCIÓN PRINCIPAL (HERO)
+   HERO
    ═══════════════════════════════════ */
 .inicio {
 height: 100vh;
@@ -99,17 +115,18 @@ padding-top: 80px;
 }
 
 .container-banner {
-background-color: black;
+background-color: var(--color-surface);
 padding: 30px;
 max-width: 450px;
 margin: auto;
 text-align: center;
 border-radius: 40px;
+box-shadow: 0 0 25px rgba(108, 99, 255, 0.35);
 }
 
 .container-img img {
 margin-top: 40px;
-border: 10px solid #4823ed;
+border: 10px solid var(--color-primary);
 width: 80%;
 border-radius: 100%;
 display: block;
@@ -120,11 +137,13 @@ margin: auto;
 margin-top: 40px;
 font-size: 42px;
 font-family: 'Righteous', cursive;
+color: var(--color-text);
 }
 
 .container-banner h2 {
 font-size: 15px;
 font-weight: normal;
+color: var(--color-text-muted);
 }
 
 /* ═══════════════════════════════════
@@ -138,12 +157,12 @@ margin-top: 20px;
 }
 
 .redes a {
-color: #fff;
+color: var(--color-text);
 display: inline-flex;
 align-items: center;
 justify-content: center;
 text-decoration: none;
-border: 1px solid #fff;
+border: 1px solid var(--color-text);
 border-radius: 50%;
 width: 42px;
 height: 42px;
@@ -152,8 +171,8 @@ transition: 0.3s;
 }
 
 .redes a:hover {
-background: #4823ed;
-border-color: #4823ed;
+background: var(--color-primary);
+border-color: var(--color-primary);
 transform: scale(1.1);
 }
 
@@ -161,37 +180,36 @@ transform: scale(1.1);
    FOOTER
    ═══════════════════════════════════ */
 footer {
-background-color: black;
-color: #fff;
+background-color: #000;
+color: var(--color-text);
 padding: 15px 0;
 text-align: center;
 width: 100%;
 }
 
 /* ═══════════════════════════════════
-   RESPONSIVE DESIGN (Móviles)
+   RESPONSIVE
    ═══════════════════════════════════ */
 @media screen and (max-width: 768px) {
 .menu-icon {
-    display: block;
+   display: block;
 }
 
 .nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #252a2e;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 180px;
-    padding: 20px;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 0 10px;
+   display: none;
+   flex-direction: column;
+   background-color: var(--color-surface);
+   position: absolute;
+   top: 60px;
+   right: 0;
+   width: 180px;
+   padding: 20px;
+   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+   border-radius: 0 0 0 10px;
 }
 
-  /* Mostrar menú cuando el checkbox está marcado */
 #menu-toggle:checked + .menu-icon + .nav ul {
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: center;
 }
 }
