@@ -1,22 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lizeth velez | Pro Portfolio</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>LICHA | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 
     <div class="background-blobs">
-        <div class="blob"></div>
-        <div class="blob"></div>
+        <div class="blob orange"></div>
+        <div class="blob cyan"></div>
     </div>
     
     <header class="main-nav">
-        <div class="logo">LICHA</div>
+        <div class="logo">LICHA<span>.</span></div>
+
+        <input type="checkbox" id="menu-check">
+        
+        <label for="menu-check" class="menu-icono">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre Mí</a>
+            <a href="#">Skills</a>
+            <a href="#">Curriculum</a>
+            <a href="#">Portafolio</a>
+            <a href="#" class="nav-btn">Contacto</a>
+        </nav>
     </header>
+
+    <main class="container">
+        <section class="glass-card" id="home">
+            <div class="profile-container">
+                <div class="img-box">
+                    <img src="tu-foto.jpg" alt="Lizeth Zamara">
+                </div>
+                
+            </div>
+
+            <div class="info-text">
+                <h1 class="main-title">Lizeth Zamara <span>Velez Falla</span></h1>
+                <p class="subtitle">Aprendiz ADSO • Frontend Developer</p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="social-links">
+                <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+           
+
+    
+    </main>
+
 </body>
 </html>

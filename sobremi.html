@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LICHA | Sobre Mí</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/sobremi.css">
+</head>
+<body>
+
+    <div class="background-blobs">
+        <div class="blob orange"></div>
+        <div class="blob cyan"></div>
+    </div>
+    
+    <header class="main-nav">
+        <div class="logo">LICHA<span>.</span></div>
+
+        <input type="checkbox" id="menu-check">
+        
+        <label for="menu-check" class="menu-icono">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a> <a href="#about">Sobre Mí</a>
+            <a href="#">Skills</a>
+            <a href="#">Curriculum</a>
+            <a href="#">Portafolio</a>
+            <a href="#" class="nav-btn">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="glass-card" id="about">
+            <div class="card-header">
+                <h2 class="section-title">Sobre <span>Mí</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="bio-content">
+                <p class="bio-text">
+                    ¡Hola! Soy <span class="highlight">Lizeth Velez</span>. Transformo ideas en realidades digitales como aprendiz de ADSO. Mi enfoque es el código limpio y el diseño intuitivo, siempre buscando aprender nuevas tecnologías para crear experiencias únicas.
+                </p>
+            </div>
+
+            <div class="personal-grid">
+                <div class="data-item">
+                    <div class="icon-circle"><i class="fa-solid fa-cake-candles"></i></div>
+                    <div class="data-info">
+                        <span>Cumpleaños</span>
+                        <p>15 Abril, 2007</p>
+                    </div>
+                </div>
+                <div class="data-item">
+                    <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="data-info">
+                        <span>Ubicación</span>
+                        <p>Garzón, Huila</p>
+                    </div>
+                </div>
+                <div class="data-item">
+                    <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="data-info">
+                        <span>Email</span>
+                        <p>lizethvelez551@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3 class="mini-title">Mis Intereses</h3>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Música</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Cine</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Coding</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Cerrar menú móvil al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu-check').checked = false;
+            });
+        });
+    </script>
+
+</body>
+</html>

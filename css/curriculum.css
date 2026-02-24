@@ -1,0 +1,82 @@
+/* --- VARIABLES --- */
+:root {
+    --primary: #5ce1e6;
+    --accent: #ff9d00;
+    --bg: #08080a;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* --- ESTILOS GENERALES (Si no los tienes) --- */
+body {
+    background-color: var(--bg);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+/* --- TARJETA GLASS --- */
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 40px;
+    padding: 50px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.section-title span { color: var(--primary); }
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 10px;
+    margin: 10px 0 40px;
+}
+
+/* --- CONTENEDOR RESUME --- */
+.resume-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.resume-subtitle {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.resume-subtitle i {
+    color: var(--primary);
+    filter: drop-shadow(0 0 5px var(--primary));
+}
+
+/* --- TIMELINE (Línea de tiempo) --- */
+.timeline {
+    border-left: 2px solid var(--glass-border);
+    padding-left: 25px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom:
