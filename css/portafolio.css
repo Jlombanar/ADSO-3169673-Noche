@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-/* ═══════════════════════════════════
-   HEADER FIJO EN LA PARTE SUPERIOR
-   ═══════════════════════════════════ */
 .container-header {
   background: #15272f;
   position: fixed;
@@ -28,9 +25,6 @@
   text-decoration: none;
 }
 
-/* ═══════════════════════════════════
-   MENÚ DE NAVEGACIÓN
-   ═══════════════════════════════════ */
 .nav ul {
   display: flex;
   list-style: none;
@@ -48,9 +42,6 @@
   color: #1cb698;
 }
 
-/* ═══════════════════════════════════
-   MENÚ RESPONSIVE (sin JavaScript)
-   ═══════════════════════════════════ */
 #menu-toggle {
   display: none;
 }
@@ -64,9 +55,6 @@
   border-radius: 20px;
 }
 
-/* ═══════════════════════════════════
-   REDES SOCIALES
-   ═══════════════════════════════════ */
 .redes {
   display: flex;
   justify-content: center;
@@ -94,9 +82,6 @@
   transform: scale(1.1);
 }
 
-/* ═══════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════ */
 footer {
   background-color: #15272f;
   color: #fff;
@@ -122,8 +107,7 @@ footer {
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
     border-radius: 0 0 0 10px;
   }
-
-  /* Mostrar menú cuando el checkbox está marcado */
+  
   #menu-toggle:checked + .menu-icon + .nav ul {
     display: flex;
     align-items: center;

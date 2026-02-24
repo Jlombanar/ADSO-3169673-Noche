@@ -5,9 +5,6 @@
   padding: 0%;
 }
 
-/* ═══════════════════════════════════
-   HEADER FIJO EN LA PARTE SUPERIOR
-   ═══════════════════════════════════ */
 .container-header {
   background: #203a43;
   position: fixed;
@@ -33,9 +30,6 @@
   text-decoration: none;
 }
 
-/* ═══════════════════════════════════
-   MENÚ DE NAVEGACIÓN
-   ═══════════════════════════════════ */
 .nav ul {
   display: flex;
   list-style: none;
@@ -53,9 +47,6 @@
   color: #1cb698;
 }
 
-/* ═══════════════════════════════════
-   MENÚ RESPONSIVE (sin JavaScript)
-   ═══════════════════════════════════ */
 #menu-toggle {
   display: none;
 }
@@ -69,9 +60,6 @@
   border-radius: 20px;
 }
 
-/* ═══════════════════════════════════
-   REDES SOCIALES
-   ═══════════════════════════════════ */
 .redes {
   display: flex;
   justify-content: center;
@@ -99,9 +87,6 @@
   transform: scale(1.1);
 }
 
-/* ═══════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════ */
 footer {
   background-color: #203a43;
   color: #fff;
@@ -128,7 +113,6 @@ footer {
     border-radius: 0 0 0 10px;
   }
 
-  /* Mostrar menú cuando el checkbox está marcado */
   #menu-toggle:checked + .menu-icon + .nav ul {
     display: flex;
     align-items: center;
