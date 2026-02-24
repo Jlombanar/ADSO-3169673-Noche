@@ -15,9 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-/* =========================================
-   NAVEGACIÓN PREMIUM
-   ========================================= */
+
 header {
     position: fixed; 
     top: 0;
@@ -40,14 +38,14 @@ header {
     position: relative;
 }
 
-/* Lógica del Checkbox */
+
 #menu-check {
     display: none;
 }
 
-/* ICONO HAMBURGUESA: Configuración clave para que se vea */
+
 .menu-toggle {
-    display: none; /* Oculto en PC */
+    display: none; 
     color: #ffffff;
     font-size: 1.8rem;
     cursor: pointer;
@@ -92,18 +90,24 @@ header {
     margin-top: 5px;
 }
 
-/* =========================================
-   RESPONSIVO MÓVIL
-   ========================================= */
+footer {
+    padding: 40px 0;
+    background-color: #000000;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Ahora sí aparece */
+        display: block; 
     }
 
     .nav-list {
         position: fixed;
         top: 0;
-        right: -100%; /* Escondido a la derecha */
+        right: -100%; 
         width: 80%;
         height: 100vh;
         background: #0a0a0a;
@@ -115,12 +119,12 @@ header {
         z-index: 1001;
     }
 
-    /* Mostrar menú al hacer click */
+   
     #menu-check:checked ~ .nav-list {
         right: 0;
     }
 
-    /* Efecto en el icono al abrir */
+
     #menu-check:checked ~ .menu-toggle {
         color: #2575fc;
     }
@@ -130,9 +134,7 @@ header {
     }
 }
 
-/* =========================================
-   SKILLS (CONTENIDO)
-   ========================================= */
+
 .skills-container {
     padding: 140px 10% 60px;
     text-align: center;

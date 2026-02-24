@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | Juan David Angarita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <body>
-    
+
+    <header>
+        <nav class="nav-container">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="curriculum.html">Currículum</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="protafolio.html">Portafolio</a></li>
+                <li><a href="contactenos.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-header">
+            <span class="subtitle">Ponte en contacto</span>
+            <h2>Hablemos</h2>
+            <p>¿Tienes un proyecto en mente o alguna consulta? No dudes en escribirme.</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>angaritajuan08@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Huila, Colombia</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <input type="text" placeholder="Asunto" required>
+                <textarea placeholder="Tu mensaje..." rows="6" required></textarea>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Juan David Angarita Rojas</p>
+    </footer>
+
 </body>
 </html>

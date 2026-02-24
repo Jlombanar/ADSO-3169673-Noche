@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio | Juan David Angarita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/protafolio.css">
 </head>
 <body>
-    
+
+    <header>
+        <nav class="nav-container">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="curriculum.html">Currículum</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="protafolio.html" class="active">Portafolio</a></li>
+                <li><a href="contactenos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-container">
+        <div class="portfolio-header">
+            <span class="subtitle">Mis Proyectos</span>
+            <h2>Portafolio</h2>
+            <p>Una selección de mis trabajos más recientes en desarrollo web y diseño.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./img/proyecto1.jpg" alt="Nombre del Proyecto">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Minimalista</h3>
+                    <p>Tienda online desarrollada con HTML5, CSS3 y JavaScript funcional.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./img/proyecto2.jpg" alt="Nombre del Proyecto">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Menu Digital</h3>
+                    <p>Menu digital de productos de una tineda online.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        
+                    </div>
+                </div>
+            </div>
+
+           
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Juan David Angarita Rojas </p>
+    </footer>
+
 </body>
 </html>

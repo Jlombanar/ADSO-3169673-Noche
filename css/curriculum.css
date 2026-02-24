@@ -146,6 +146,8 @@ nav ul li a.active {
     border-color: #2575fc;
 }
 
+
+
 /*!------reponsive-----!*/
 @media (max-width: 900px) {
     header { top: 0; padding: 20px; display: flex; justify-content: flex-end; background: rgba(0,0,0,0.9); }

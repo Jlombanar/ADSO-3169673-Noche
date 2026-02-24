@@ -179,6 +179,15 @@ nav ul li a.active {
     transition: 0.3s;
 }
 
+footer {
+    padding: 40px 0;
+    background-color: #000000;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.507);
+    font-size: 0.9rem;
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
     header {
