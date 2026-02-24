@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: #0f1115;
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.header {
+    background: #1a1d24;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.logo a:hover {
+    color: #00ffb3;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b0b3b8;
+    font-size: 0.95rem;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: #00ffb3;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a[aria-current="page"] {
+    color: #00ffb3;
+}
+
+.projects-container {
+    padding: 70px 40px;
+    display: grid;
+    gap: 60px;
+}
+
+.projects-hero {
+    text-align: center;
+}
+
+.projects-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.projects-hero p {
+    color: #b0b3b8;
+}
+
+.accordion {
+    display: grid;
+    gap: 20px;
+}
+
+details {
+    background: #1e222b;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 15px 20px;
+    transition: 0.3s ease;
+}
+
+details[open] {
+    background: rgba(0,255,179,0.08);
+    border-color: #00ffb3;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    list-style: none;
+    position: relative;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    transition: 0.3s ease;
+}
+
+details[open] summary::after {
+    content: "−";
+    color: #00ffb3;
+}
+
+.content {
+    margin-top: 15px;
+    color: #b0b3b8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    align-self: flex-start;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background: #00ffb3;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255,255,255,0.3);
+    transition: 0.4s ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,255,179,0.4);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #1a1d24;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
+    color: #b0b3b8;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-container {
+        padding: 50px 20px;
+    }
+
+    .projects-hero h1 {
+        font-size: 2rem;
+    }
+}
