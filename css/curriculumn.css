@@ -369,3 +369,35 @@ line-height:1.7;
 }
 
 }
+
+/* ═══════════════════════════════════
+REDES SOCIALES
+═══════════════════════════════════ */
+.redes {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.redes a {
+color: #d4af37;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+border: 1px solid rgba(212,175,55,0.5);
+background: rgba(212,175,55,0.05);
+border-radius: 50%;
+width: 42px;
+height: 42px;
+font-size: 20px;
+transition: 0.3s;
+}
+
+.redes a:hover {
+background: linear-gradient(135deg, #d4af37, #f5c542);
+color: black;
+transform: scale(1.15);
+box-shadow: 0 0 20px rgba(212,175,55,0.6);
+}
