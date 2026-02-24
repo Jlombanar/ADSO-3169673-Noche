@@ -1,0 +1,56 @@
+:root {
+    --bg: #0f1115;
+    --line: #00bfff;
+    --card: #1c1f26;
+    --text: #fff;
+    --soft: #b3b3b3;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+.timeline {
+    display: grid;
+    gap: 40px;
+    padding: 40px;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--line);
+}
+
+.event {
+    background: var(--card);
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-left: 50px;
+    transition: 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-4px);
+}
+
+.event span {
+    display: block;
+    color: var(--soft);
+    margin-bottom: 10px;
+}
