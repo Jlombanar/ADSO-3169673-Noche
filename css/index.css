@@ -22,7 +22,7 @@ body {
   color: #ebe8e8;
 }
 .container-header {
-  background: rgb(70, 192, 192);
+  background: rgb(118, 211, 211);
   position: fixed;
   width: 100%;
   top: 0;
@@ -60,7 +60,7 @@ body {
 }
 
 .nav ul li a:hover {
-  color: #1cb698;
+  color: #2ea890;
 }
 
 #menu-toggle {
@@ -71,7 +71,7 @@ body {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #1cb698;
+  color: #171a19;
   margin-left: auto;
   border-radius: 20px;
 }
@@ -85,9 +85,10 @@ body {
 }
 
 .container-banner {
-  background-color: black;
+  background-color: #131414;
   padding: 30px;
-  max-width: 450px;
+  width: 850px;
+  height: 459px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
@@ -95,8 +96,8 @@ body {
 
 .container-img img {
   margin-top: 40px;
-  border: 10px solid #2bc0ca;
-  width: 80%;
+  border: 5px solid #2bc0ca;
+  width: 40%;
   border-radius: 100%;
   display: block;
   margin: auto;
@@ -141,7 +142,7 @@ body {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.705);
+  background-color: rgba(62, 126, 138, 0.705);
   color: #fff;
   padding: 15px 0;
   text-align: center;
