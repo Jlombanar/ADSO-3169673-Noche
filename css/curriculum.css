@@ -1,0 +1,80 @@
+/* ================= CURRICULUM SECTION ================= */
+
+.curriculum-section{
+    padding: 140px 8% 80px;
+    min-height: 100vh;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+/* TIMELINE */
+
+.timeline{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 4px 1fr;
+    gap: 40px;
+}
+
+/* Línea central */
+.timeline::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: var(--primary);
+    transform: translateX(-50%);
+}
+
+.timeline-column{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timeline-item{
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s ease;
+}
+
+.timeline-item h3{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.timeline-item span{
+    color: var(--primary);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.timeline-item p{
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 900px){
+
+    .timeline{
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before{
+        display: none;
+    }
+
+}
