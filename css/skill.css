@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@300;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* ================= HEADER ================= */
+
+.container-header{
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo a{
+    font-family: 'Righteous', cursive;
+    font-size: 32px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav ul li a:hover{
+    color: #1cb698;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ================= SKILLS ================= */
+
+.skills{
+    padding: 120px 20px 60px;
+}
+
+.skills .container-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    font-family: 'Righteous', cursive;
+}
+
+.skills .fila{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skills .col{
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1cb698;
+}
+
+/* Barras */
+
+.barra-skills{
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    margin: 10px 0 25px;
+    overflow: hidden;
+}
+
+.progreso{
+    height: 100%;
+    background: #1cb698;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    animation: crecer 2s ease-in-out;
+}
+
+/* Anchos personalizados */
+
+.javascript{ width:75%; }
+.htmlcss{ width:89%; }
+.node{ width:90%; }
+.react{ width:90%; }
+.comunicacion{ width:75%; }
+.equipo{ width:89%; }
+.manager{ width:90%; }
+
+@keyframes crecer{
+    from{ width:0; }
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.redes a:hover{
+    background: #1cb698;
+    border-color: #1cb698;
+    transform: scale(1.1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .menu-icon{
+        display: block;
+    }
+
+    .nav ul{
+        display: none;
+        flex-direction: column;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+    }
+
+    #menu-toggle:checked ~ .nav ul{
+        display: flex;
+    }
+
+    .skills .fila{
+        flex-direction: column;
+    }
+}

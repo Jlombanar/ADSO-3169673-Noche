@@ -1,17 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
-
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
+body {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(to top, #173831, #051F20);
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* HEADER */
+.container-header {
+  background: #051F20;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 4px 15px rgba(0,0,0,.4);
+}
+
+.logo a {
+  font-family: 'Righteous', cursive;
+  font-size: 36px;
+  color: #DBF0DD;
+  text-decoration: none;
+}
+
+/* NAV */
 .nav ul {
   display: flex;
   list-style: none;
@@ -19,107 +39,73 @@ body {
 }
 
 .nav ul li a {
-  color: #fff;
+  color: #8CB79B;
   text-decoration: none;
   padding: 5px;
   transition: 0.3s;
 }
 
 .nav ul li a:hover {
-  color: #1cb698;
+  color: #DBF0DD;
 }
 
+/* SECCIÓN SOBRE MI */
 .sobremi { 
-  color: white;   
-  padding: 100px 20px;
+  color: #DBF0DD;
+  padding: 40px 20px;
   text-align: center;
-  min-height: 100vh; 
 }
 
-.sobremi .container-section{
-    max-width: 1100px;
-    margin: auto;
+.sobremi h2 {
+  font-size: 48px;
+  color: #8CB79B;
 }
 
-.sobremi h2{
-    font-size: 48px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 20px 0;
+.sobremi .fila .col h3 {
+  color: #8CB79B;
 }
 
-.sobremi .fila{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+.sobremi .fila .col ul strong {
+  color: #235347;
 }
 
-.sobremi .fila .col{
-    flex: 1;
-    min-width: 300px;
+/* INTERESES */
+.sobremi .fila .col .container-interes .interes {
+  width: 100px;
+  height: 100px;
+  background-color: #235347;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  color: #DBF0DD;
 }
 
-.sobremi .fila .col h3{
-    font-size: 28px;
-    margin-bottom: 25px;
+.sobremi .fila .col .container-interes .interes:hover {
+  background-color: #8CB79B;
+  color: #051F20;
+  transform: scale(1.1);
 }
 
-.sobremi .fila .col ul{
-    list-style: none;
+/* REDES */
+.redes a {
+  color: #DBF0DD;
+  border: 1px solid #8CB79B;
+  background: #173831;
 }
 
-.sobremi .fila .col ul li{
-    margin: 12px 0;
+.redes a:hover {
+  background: #8CB79B;
+  color: #051F20;
+  border-color: #8CB79B;
 }
 
-.sobremi .fila .col ul strong{
-    display: inline-block;
-    color: #1cb698;
-    width: 120px; 
-    text-align: right;
-}
-
-/* Sección de intereses */
-.sobremi .fila .col .container-interes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.sobremi .fila .col .container-interes .interes{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(171, 165, 165);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
-
-.sobremi .fila .col .container-interes .interes:hover{
-    background-color: #1cb698;
-    transform: scale(1.1);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.5); 
-    position: absolute;
-    top: 60px;
-    right: 20px;
-  }
-
-  #menu-toggle:checked ~ .nav ul {
-    display: flex;
-  }
+/* FOOTER */
+footer {
+  background-color: #051F20;
+  color: #DBF0DD;
+  padding: 15px 0;
+  text-align: center;
 }
