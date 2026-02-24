@@ -232,29 +232,66 @@ body {
 @media (max-width: 768px) {
     .menu-icon { display: block; }
 
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        background: rgba(15, 23, 42, 0.98);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2.5rem;
-        transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 999;
-    }
+.menu-icon { 
+    display: block; 
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-    /* Mostrar menú al hacer check */
-    .menu-check:checked ~ .nav-links {
-        right: 0;
-    }
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #252a2e; 
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 0 0 0 10px;
+}
 
-    .nav-links a {
-        margin: 0;
-        font-size: 1.3rem;
-    }
+
+.menu-check:checked ~ .nav-links {
+    display: flex;
+    align-items: center;
+}
+}
+/* ================= FOOTER PROFESIONAL ================= */
+
+footer{
+    padding: 3rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+footer .redes{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Botones sociales estilo moderno */
+footer .redes a{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Hover elegante */
+footer .redes a:hover{
+    background: #c90909;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }

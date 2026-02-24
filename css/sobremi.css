@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Righteous&display=swap');
+
+:root {
+    --primary: #db1414;
+    --accent: #d4b504c4;
+    --bg-dark: #0045e7;
+    --glass: rgb(46, 3, 3);
+    --glass-border: rgba(168, 6, 6, 0.12);
+    --text-main: #f1f5f9;
+    --text-dim: #ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobremi {
+    flex: 1;
+}
+
+body{
+    background: radial-gradient(circle at top right, #3f0303, #3a0909);
+    color: var(--text-main);
+    min-height:100vh;
+}
+
+/* ================= HEADER (MISMO ESTILO QUE INDEX) ================= */
+
+.container-header{
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:1000;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.2rem 8%;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom:1px solid var(--glass-border);
+    background: rgba(46, 1, 1, 0.7);
+}
+
+.logo a{
+    font-family:'Righteous',cursive;
+    font-size:2.2rem;
+    color:#fff;
+    text-decoration:none;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:var(--primary);
+}
+
+.nav ul{
+    display:flex;
+    list-style:none;
+}
+
+.nav ul li{
+    margin-left:2rem;
+}
+
+.nav ul li a{
+    text-decoration:none;
+    color:var(--text-main);
+    transition:.3s;
+    font-size:.95rem;
+}
+
+.nav ul li a:hover{
+    color:var(--primary);
+}
+
+#menu-toggle{
+    display:none;
+}
+
+.menu-icon{
+    display:none;
+    font-size:1.8rem;
+    color:var(--primary);
+    cursor:pointer;
+}
+
+/* ================= SOBRE MI ================= */
+
+.sobremi{
+    padding:140px 8% 80px 8%;
+}
+
+.sobremi h2{
+    font-size:2.5rem;
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.sobremi p{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 3rem auto;
+    color:var(--text-dim);
+}
+
+.fila{
+    display:flex;
+    gap:4rem;
+    flex-wrap:wrap;
+}
+
+.col{
+    flex:1;
+    min-width:300px;
+}
+
+.col h3{
+    font-size:1.5rem;
+    margin-bottom:1.5rem;
+    color:var(--primary);
+}
+
+.col ul{
+    list-style:none;
+}
+
+.col ul li{
+    margin:12px 0;
+}
+
+.col ul strong{
+    color:var(--primary);
+    width:120px;
+    display:inline-block;
+}
+
+/* Intereses */
+
+.container-interes{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.interes{
+    width:110px;
+    height:110px;
+    background:var(--glass);
+    border:1px solid var(--glass-border);
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.interes i{
+    font-size:1.5rem;
+    margin-bottom:5px;
+}
+
+.interes:hover{
+    background:var(--primary);
+    transform:translateY(-8px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+header{
+    position: relative;
+    padding: 1.2rem 20px; /* quitamos el 8% en móvil */
+}
+
+.menu-icon{
+    display: block;
+    position: absolute;
+    right: 20px;  
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav ul{
+    display:none;
+    flex-direction:column;
+    background-color:#252a2e;
+    position:absolute;
+    top:70px;
+    right:0;   
+    width:200px;
+    padding:20px;
+    border-radius:0 0 0 10px;
+}
+#menu-toggle:checked ~ .nav ul{
+    display:flex;
+    align-items: center;
+}
+
+.nav ul li{
+margin: 0;
+font-size: 1.3rem;
+}
+
+
+}
+
+
+footer{
+    padding: 3rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+footer .redes{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+footer .redes a{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Hover elegante */
+footer .redes a:hover{
+    background: #c90909;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
