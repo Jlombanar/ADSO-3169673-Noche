@@ -11,6 +11,19 @@ html {
   scroll-behavior: smooth;
 }
 
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
 .container-header {
   background: #020518;
   position: fixed;
@@ -66,17 +79,6 @@ html {
   margin-left: auto;
   border-radius: 20px;
 }
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/fondo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
 
 .sobremi { 
   color: white;   
@@ -98,7 +100,6 @@ body {
     margin-top: 100px;
     
 }
-
 
 .sobremi p{
     font-size: 30px;
