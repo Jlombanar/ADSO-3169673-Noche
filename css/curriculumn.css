@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+/* ═══════════════════════════════════
+RESET
+═══════════════════════════════════ */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Work Sans', sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+min-height:100vh;
+background:linear-gradient(to top, rgba(15,15,15,.9), rgba(20,20,20,1)),
+url(../img/fondo.png);
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:#fff;
+}
+
+/* ═══════════════════════════════════
+HEADER
+═══════════════════════════════════ */
+.container-header{
+background:rgba(0,0,0,0.95);
+backdrop-filter:blur(10px);
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index:100;
+border-bottom:1px solid rgba(212,175,55,0.15);
+}
+
+.container-header header{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo a{
+font-family:'Righteous', cursive;
+font-size:36px;
+background:linear-gradient(135deg,#d4af37,#f5c542);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+text-decoration:none;
+}
+
+/* MENÚ */
+.nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.nav ul li a{
+color:#fff;
+text-decoration:none;
+padding:5px;
+position:relative;
+transition:.3s ease;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active{
+color:#d4af37;
+}
+
+.nav ul li a::after{
+content:"";
+position:absolute;
+left:50%;
+bottom:-4px;
+width:0%;
+height:2px;
+background:#d4af37;
+transition:.3s ease;
+transform:translateX(-50%);
+}
+
+.nav ul li a:hover::after,
+.nav ul li a.active::after{
+width:100%;
+}
+
+#menu-toggle{display:none;}
+.menu-icon{display:none;}
+
+/* ═══════════════════════════════════
+SECCIÓN CURRICULUM
+═══════════════════════════════════ */
+.curriculum-section{
+padding:130px 20px 80px;
+animation:fadeUp 1.2s ease forwards;
+}
+
+.container-section{
+max-width:1100px;
+margin:auto;
+background: rgba(0,0,0,.45);
+padding:60px;
+border-radius:35px;
+border:1px solid rgba(212,175,55,.25);
+backdrop-filter: blur(15px);
+box-shadow:0 25px 70px rgba(0,0,0,.5);
+}
+
+.curriculum-section h2{
+font-size:48px;
+font-family:'Righteous', cursive;
+text-align:center;
+margin-bottom:20px;
+background:linear-gradient(135deg,#d4af37,#f5c542);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* SUBTÍTULO */
+.subtitle{
+text-align:center;
+max-width:700px;
+margin:0 auto 60px;
+font-size:16px;
+opacity:.75;
+line-height:1.6;
+letter-spacing:.5px;
+}
+
+/* ═══════════════════════════════════
+TIMELINE
+═══════════════════════════════════ */
+.timeline{
+display:flex;
+gap:60px;
+position:relative;
+}
+
+/* Línea central animada */
+.timeline::before{
+content:"";
+position:absolute;
+left:50%;
+top:0;
+transform:translateX(-50%);
+width:3px;
+height:0%;
+background:linear-gradient(to bottom,#d4af37,transparent);
+animation:growLine 1.8s ease forwards;
+}
+
+@keyframes growLine{
+from{height:0%;}
+to{height:100%;}
+}
+
+/* Columnas */
+.timeline-column{
+flex:1;
+}
+
+.timeline-column h3{
+color:#d4af37;
+margin-bottom:40px;
+font-size:24px;
+letter-spacing:1px;
+}
+
+/* Items */
+.timeline-item{
+position:relative;
+margin-bottom:40px;
+}
+
+/* ELIMINADAS LAS BOLITAS */
+/* (antes estaban aquí los ::before) */
+
+.content{
+background:rgba(0,0,0,.52);
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(212,175,55,.15);
+transition:.3s ease;
+}
+
+.content:hover{
+transform:translateY(-5px);
+border:1px solid rgba(212,175,55,.4);
+}
+
+.content h4{
+font-size:18px;
+margin-bottom:8px;
+}
+
+.institution{
+display:block;
+color:#d4af37;
+font-weight:600;
+margin-bottom:5px;
+}
+
+.date{
+display:block;
+font-size:13px;
+opacity:.7;
+margin-bottom:10px;
+}
+
+.content p{
+font-size:14px;
+line-height:1.6;
+opacity:.85;
+}
+
+/* ═══════════════════════════════════
+PERFIL PROFESIONAL
+═══════════════════════════════════ */
+.professional-profile{
+margin-top:60px;
+padding:50px;
+background:rgba(0,0,0,.55);
+border-radius:25px;
+border:1px solid rgba(212,175,55,.25);
+backdrop-filter:blur(10px);
+transition:.3s ease;
+}
+
+.professional-profile:hover{
+transform:translateY(-5px);
+border:1px solid rgba(212,175,55,.4);
+}
+
+.professional-profile h3{
+color:#d4af37;
+margin-bottom:20px;
+font-size:22px;
+}
+
+.professional-profile p{
+line-height:1.8;
+opacity:.85;
+font-size:15px;
+}
+
+/* Animación general */
+@keyframes fadeUp{
+0%{opacity:0; transform:translateY(40px);}
+100%{opacity:1; transform:translateY(0);}
+}
+
+/* Responsive */
+@media screen and (max-width:900px){
+
+.timeline{
+flex-direction:column;
+}
+
+.timeline::before{
+left:8px;
+}
+
+}
+
+/* FOOTER */
+footer{
+background:black;
+color:#fff;
+padding:20px 0;
+text-align:center;
+border-top:1px solid rgba(212,175,55,0.2);
+}
+
+
