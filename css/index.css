@@ -27,6 +27,7 @@ body {
    HEADER FIJO EN LA PARTE SUPERIOR
    ═══════════════════════════════════ */
 .container-header {
+  
   background: black;
   position: fixed;
   width: 100%;
