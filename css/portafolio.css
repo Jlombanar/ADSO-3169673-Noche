@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+* {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-header {
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container-header header .logo a {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a {
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.container-header header nav ul li a:hover {
+    color: #1cb698;
+}
+
+section {
+    margin-top: 80px; 
+}
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1cb698;
+  margin-left: auto; 
+  border-radius: 20px;
+}
+/* Sección Portafolio */
+.portafolio {
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.portafolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00b894;
+}
+
+/* Grid de proyectos */
+.grid-portafolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas de proyectos */
+.card {
+  background: #222;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 300px;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card a:hover {
+  background: #009874;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .redes {
+  margin-bottom: 20px;
+}
+
+footer .redes a {
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 10px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+footer .redes a:hover {
+  background: #1cb698;
+  border-color: #1cb698;
+  transform: scale(1.1);
+}
+/* responsive  nav */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #1cb698; /* color de tu logo */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 300;
+  }
+
+  /* Menú oculto */
+  .container-header header .nav ul {
+    display: none;
+    flex-direction: column;
+  background-color: rgba(0,0,0,0.5); 
+    position: absolute;
+    top: 60px;  
+    right: 20px; 
+    width: 200px;  
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    z-index: 250;
+  }
+
+  /* Mostrar menú al activar */
+  #menu-toggle:checked ~ .nav ul {
+    display: flex;
+  }
+
+  .container-header header .nav ul li {
+    margin: 5px 0;
+  }
+
+  .container-header header .nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+  }
+
+  
+}

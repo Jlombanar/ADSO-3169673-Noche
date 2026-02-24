@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/curriculum.css">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
+  <title>Curriculum</title>
 </head>
 <body>
-    
+  <!-- Menú de header -->
+  <div class="container-header">
+    <header>
+      <div class="logo">
+        <a href="#">DSCV</a>
+      </div>
+
+       <!-- Menu de  responsive -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <nav class="nav">
+        <ul>
+          <li><a href='index.html'>Inicio</a></li>
+          <li><a href='sobremi.html'>Sobre Mi</a></li>
+          <li><a href='skill.html'>Skills</a></li>
+          <li><a href='curriculum.html'>Curriculum</a></li>
+          <li><a href='portafolio.html'>Portafolio</a></li>
+          <li><a href='contactenos.html'>Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div> 
+
+  <!-- Contenido principal -->
+  
+    <section id="curriculum" class="curriculum">
+      <div class="container-section">
+        <h2>Currículum</h2>
+        <div class="fila">
+          
+          <!-- Columna izquierda: Educación -->
+          <div class="col izquierda">
+            <h3>Educación</h3>
+
+            <div class="item izq">
+              <h4>Tecnico en sistemas</h4>
+              <span class="casa">servicio nacional de aprendizaje SENA</span>
+              <span class="fecha">2023- 2024</span>
+              <p>Tecnico en sistemas</p>
+              <div class="conectori"><div class="circuloi"></div></div>
+            </div>
+
+            <div class="item izq">
+              <h4>Tecnologo en Analisi y desarrollo de software</h4>
+              <span class="casa">servicio nacional de aprendizaje SENA</span>
+              <span class="fecha">2025 - 2026</span>
+              <p>Desarrollador junior</p>
+              <div class="conectori"><div class="circuloi"></div></div>
+            </div>
+
+            <div class="item izq">
+              <h4>Mantenimiento de Equipos de Cómputo</h4>
+              <span class="casa">Universidad Nacional a Distancia UNAD</span>
+              <span class="fecha">2017 - 2022</span>
+              <p>Mantenimiento de equipos</p>
+              <div class="conectori"><div class="circuloi"></div></div>
+            </div>
+          </div>
+
+          <!-- Columna derecha: Experiencia -->
+          <div class="col derecha">
+            <h3>Experiencia Laboral</h3>
+
+            <div class="item der">
+              <h4>Ingeniero de Soporte Técnico</h4>
+              <span class="casa">SENA</span>
+              <span class="fecha">2012 - 2023</span>
+              <p>Agente de mesa de servicio y soporte a usuarios.</p>
+              <div class="conectord"><div class="circulod"></div></div>
+            </div>
+
+            <div class="item der">
+              <h4>Ingeniero de Redes</h4>
+              <span class="casa">SENA</span>
+              <span class="fecha">2012 - 2023</span>
+              <p>Administración y mantenimiento de infraestructura de red.</p>
+              <div class="conectord"><div class="circulod"></div></div>
+            </div>
+
+            <div class="item der">
+              <h4>Instructor de Programación</h4>
+              <span class="casa">SENA</span>
+              <span class="fecha">2012 - 2023</span>
+              <p>Formación en desarrollo de software y buenas prácticas.</p>
+              <div class="conectord"><div class="circulod"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
 </body>
 </html>
