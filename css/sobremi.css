@@ -203,17 +203,89 @@ footer {
   .menu-icon {
     display: block;
   }
+    .nav ul{
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(rgba(2, 5, 24, 0.8), rgba(2, 5, 24, 0.8));
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        padding: 20px;
+        border-radius:10px;
+        border: 1px solid #1939f0;
+    }
 
-  .nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.5); 
-    position: absolute;
-    top: 60px;
-    right: 20px;
-  }
+    #menu-toggle:checked + .menu-icon + .nav ul{
+        display: flex;
+    }
 
   #menu-toggle:checked ~ .nav ul {
     display: flex;
+  }
+
+  .sobremi .container-section{
+    max-width: 420px;
+    padding: 20px;
+  }
+
+  .sobremi h2{
+    font-size: 28px;
+  }
+
+  .sobremi p{
+    font-size: 18px;
+  }
+
+  .sobremi .fila{
+    flex-direction: column;
+  }
+
+  .sobremi .fila .col{
+    min-width: 100%;
+  }
+
+  .sobremi .fila .col h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .sobremi .fila .col ul{
+    padding-left: 0;
+    font-size: 18px;
+  }
+
+  .sobremi .fila .col ul li{
+    margin: 10px 0;
+  }
+
+  .sobremi .fila .col ul strong{
+    display: space-between;
+    color: #1939f0;
+    width: 100px; 
+  }
+
+  .sobremi .fila .col .container-interes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .sobremi .fila .col .container-interes .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #1939f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+
+  .sobremi .fila .col .container-interes .interes:hover{
+    background-color: #1939f0;
+    transform: scale(1.1);
   }
 }

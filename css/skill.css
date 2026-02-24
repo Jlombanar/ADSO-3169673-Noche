@@ -126,7 +126,7 @@ body {
 }
 
 .skill-item{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .skill-item span{
@@ -135,26 +135,34 @@ body {
 }
 
 .barra{
-    background-color: #1e2326;
-    height: 10px;
-    border-radius: 10px;
-    margin-top: 5px;
-    overflow: hidden;
+    background-color: #2a2a2a;
+    margin-top: 18px;
+    height: 8px;
+    border-radius: 20px;
+    position: relative;
 }
 
 .progreso{
-    height: 10px;
-    background: linear-gradient(90deg,#1939f0,#3A56F2);
-    border-radius: 10px;
+    height: 8px;
+    background: #1939f0; 
+    border-radius: 20px;
     position: relative;
-    animation: crecer 2s ease;
 }
 
 .progreso span{
     position: absolute;
-    right: 0;
-    top: -22px;
-    font-size: 13px;
+    right: -20px;
+    top: -12px;
+    width: 40px;
+    height: 40px;
+    background: #3A56F2;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
 }
 
 .js{ width: 0%; }
@@ -168,8 +176,6 @@ body {
 @keyframes crecer{
     from{ width: 0; }
 }
-
-/* FOOTER */
 
 footer{
     background-color: #020518;
@@ -200,8 +206,6 @@ footer{
     border-color: #1939f0;
 }
 
-/* RESPONSIVE */
-
 @media screen and (max-width: 768px){
 
     .menu-icon{
@@ -211,13 +215,14 @@ footer{
     .nav ul{
         display: none;
         flex-direction: column;
-        background-color: #252a2e;
+        background: linear-gradient(rgba(2, 5, 24, 0.8), rgba(2, 5, 24, 0.8));
         position: absolute;
         top: 60px;
         right: 0;
         width: 180px;
         padding: 20px;
-        border-radius: 0 0 0 10px;
+        border-radius:10px;
+        border: 1px solid #1939f0;
     }
 
     #menu-toggle:checked + .menu-icon + .nav ul{
