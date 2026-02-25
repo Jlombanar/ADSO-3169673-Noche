@@ -28,7 +28,6 @@ body {
   color: #fff;
 }
 
-/* HEADER */
 .container-header {
   background: rgba(75, 15, 31, 0.95);
   backdrop-filter: blur(6px);
@@ -54,7 +53,6 @@ body {
   letter-spacing: 2px;
 }
 
-/* NAV */
 .nav ul {
   display: flex;
   list-style: none;
@@ -95,7 +93,6 @@ body {
   color: #d48ca5;
 }
 
-/* SECCIÓN PRINCIPAL */
 .inicio {
   min-height: 100vh;
   display: flex;
@@ -104,7 +101,6 @@ body {
   padding: 120px 20px 60px;
 }
 
-/* TARJETA PERFIL */
 .container-banner {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -119,14 +115,12 @@ body {
   max-width: 900px;
 }
 
-/* CONTENEDOR TEXTO */
 .container-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* FOTO */
 .container-img img {
   width: 250px;
   border-radius: 20px;
@@ -139,7 +133,6 @@ body {
   transform: scale(1.05);
 }
 
-/* TEXTO */
 .container-banner h1 {
   font-size: 38px;
   font-family: 'Righteous', cursive;
@@ -182,7 +175,7 @@ footer{
     background: #9e2a4d;
     transform: translateY(-5px);
 }
-/* RESPONSIVE */
+
 @media screen and (max-width: 768px) {
 
   .container-banner {

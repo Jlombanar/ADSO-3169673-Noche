@@ -16,7 +16,6 @@ body{
     display: flex;
     flex-direction: column;
 
-    /* FONDO VINOTINTO */
     background: linear-gradient(
         rgba(75, 15, 31, 0.75),
         rgba(26, 0, 10, 0.85)
@@ -28,8 +27,6 @@ body{
     background-attachment: fixed;
     color: #fff;
 }
-
-/* ================= HEADER ================= */
 
 .container-header{
     background: rgba(75, 15, 31, 0.95);
@@ -94,8 +91,6 @@ body{
     color: #d48ca5;
 }
 
-/* ================= SECCIÓN SOBRE MI ================= */
-
 .sobremi{
     padding: 120px 20px 50px;
 }
@@ -107,8 +102,6 @@ body{
     flex-direction: column;
     gap: 30px;
 }
-
-/* ===== BANNER 1 (Sobre Mi + Párrafo juntos) ===== */
 
 .sobremi h2{
     font-size: 2.8rem;
@@ -134,10 +127,6 @@ body{
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
-
-
-/* ===== BANNER 2 (Datos + Intereses) ===== */
-
 .sobremi .fila{
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(12px);
@@ -156,8 +145,6 @@ body{
     margin-bottom: 20px;
 }
 
-/* Datos personales */
-
 .sobremi .fila .col ul{
     list-style: none;
 }
@@ -173,8 +160,6 @@ body{
 .sobremi .fila .col ul strong{
     color: #d48ca5;
 }
-
-/* Intereses SIN CUADROS */
 
 .sobremi .fila .col .container-interes{
     display: flex;
@@ -209,8 +194,6 @@ body{
     color: #d48ca5;
 }
 
-/* ================= FOOTER ================= */
-
 footer{
     margin-top: auto;
     background: #4b0f1f;
@@ -240,8 +223,6 @@ footer{
     background: #9e2a4d;
     transform: translateY(-5px);
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px){
 

@@ -28,8 +28,6 @@ body {
   color: #fff;
 }
 
-/* ================= HEADER ================= */
-
 .container-header{
   background:#4b0f1f;
   backdrop-filter:blur(10px);
@@ -62,7 +60,6 @@ body {
   color:#ffffff;
 }
 
-/* NAV */
 .nav ul {
   display: flex;
   list-style: none;
@@ -102,7 +99,6 @@ body {
   cursor: pointer;
   color: #d48ca5;
 }
-/* ================= PERFIL ================= */
 
 .perfil{
   border-radius:2rem;
@@ -157,16 +153,12 @@ body {
   color:#f3d6dd;
 }
 
-/* ================= LINEA CENTRAL ================= */
-
 .linea-central{
   width:3px;
   height:250px;
   background:#a83250;
   border-radius:10px;
 }
-
-/* ================= FOOTER ================= */
 
 footer{
   background:#4b0f1f;
@@ -201,8 +193,6 @@ footer{
   border-color:#c44569;
   transform:translateY(-3px);
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width:768px){
 
