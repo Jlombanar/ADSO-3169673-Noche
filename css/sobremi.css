@@ -119,7 +119,7 @@ body {
 }
 
 .personal-data h2 {
-  font-family: 'times new roman', cursive;
+  font-family:'Merriweather', serif;
   margin-bottom: 10px;
   font-size: 1.8rem;
 }
@@ -134,7 +134,7 @@ body {
 }
 
 .interests h2 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Playfair Display', serif;
   margin: 20px 0 15px 0;
   font-size: 1.8rem;
 }
@@ -181,7 +181,8 @@ body {
   color: #ff6600;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+
   .about-container {
     flex-direction: column;
     align-items: center;
@@ -189,17 +190,30 @@ body {
   }
 
   .profile-pic img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
 
   .profile-info h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-}
 
-@media (max-width: 768px) {
-  
+  .profile-info p {
+    font-size: 1rem;
+  }
+
+  .interests-grid {
+    justify-content: center;
+  }
+
+  .interest-card {
+    justify-content: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
   .nav {
     position: absolute;
     top: 70px;
@@ -218,27 +232,8 @@ body {
     gap: 15px;
   }
 
-  .menu-icon {
-    display: block;
-  }
-
   #menu-toggle:checked + .menu-icon + .nav {
     display: flex;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-info h1 {
-    font-size: 1.7rem;
-  }
-
-  .profile-info p {
-    font-size: 1rem;
-  }
-
-  .profile-pic img {
-    width: 150px;
-    height: 150px;
   }
 
   .header {

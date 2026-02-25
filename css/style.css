@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: rgba(14, 13, 13, 2.8); 
+  background-color: rgba(0, 0, 0, 0.98);
   color: #f1e8e8;
   position: sticky;
   top: 0;
@@ -130,10 +130,10 @@ body {
 }
 
 .footer {
-  background-color: rgba(17, 17, 17, 0.9);
+  background-color: rgba(0, 0, 0, 0.98);
   color: #fff;
   text-align: center;
-  padding: 50px;
+  padding: 45px;
   font-size: 1rem;
 }
 
@@ -168,7 +168,7 @@ body {
   .nav-menu {
     position: fixed;
     top: 64px;             
-    right: 14px;            
+    right: 1px;            
     width: 200px;           
     background: rgba(0, 0, 0, 0.95);
     border-radius: 8px;
@@ -185,17 +185,21 @@ body {
     padding: 0;
     list-style: none;
     text-align: center;
+    width: 100%;
   }
 
   .nav-menu ul li a {
-    font-size: 0.95rem;
-    padding: 3px 0;
-    margin-left: 0;
-    text-align: center;
+  display: block;        
+  width: 100%;
+  text-align: center;    
+  font-size: 1.1rem;
+  padding: 6px 0;
+  margin: 0;
   }
 
   #nav-toggle:checked + .nav-icon + .nav-menu {
     display: flex;
+    justify-content: center;
   }
 
   .hero-section {
