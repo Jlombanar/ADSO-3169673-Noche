@@ -26,8 +26,6 @@ body{
     color:#fff;
 }
 
-/* ================= HEADER ================= */
-
 .container-header{
     background: rgba(75, 15, 31, 0.95);
     backdrop-filter: blur(6px);
@@ -91,8 +89,6 @@ body{
     cursor:pointer;
     color:#d48ca5;
 }
-
-/* ================= SECCIÓN PROYECTOS ================= */
 
 .proyectos{
     padding:140px 20px 80px;
@@ -162,8 +158,6 @@ body{
     transform:translateY(-3px);
 }
 
-/* ================= FOOTER ================= */
-
 footer{
     margin-top:auto;
     background:#4b0f1f;
@@ -193,8 +187,6 @@ footer{
     background:#9e2a4d;
     transform:translateY(-5px);
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media screen and (max-width:768px){
 
