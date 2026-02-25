@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/fondo.png) center/cover no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.png) center/cover no-repeat;
     color: #fff;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .logo a:hover {
-    text-shadow: 0 0 10px rgba(0,191,255,0.6);
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
 }
 
 .nav ul {
@@ -166,46 +166,46 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    .menu-icon{
+    .menu-icon {
         display: block;
     }
 
-    .nav{
-      position: fixed;
-      top: 63px;
-      right: 0;
-      width: 220px;
-      transition: all 0.3s ease;
-    }
-    
-    .nav ul{
-      flex-direction: column;
-      background: rgba(20, 20, 20, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 20px;
-      border-radius: 12px;
-      border: 1px solid rgba(0, 191, 255, 0.4);
-      gap: 18px;
-
-      position: absolute;
-      right: 0;
-      width: 200px;
-
-      opacity: 0;
-      transform: translateY(-15px) scale(0.98);
-      pointer-events: none;
-      transition: all 0.35s ease;
+    .nav {
+        position: fixed;
+        top: 63px;
+        right: 0;
+        width: 220px;
+        transition: all 0.3s ease;
     }
 
-    #menu-toggle:checked + .menu-icon + .nav ul{
-      opacity: 1;
-      transform: translateY(0) scale(1);
-      pointer-events: auto;
+    .nav ul {
+        flex-direction: column;
+        background: rgba(20, 20, 20, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 191, 255, 0.4);
+        gap: 18px;
+
+        position: absolute;
+        right: 0;
+        width: 200px;
+
+        opacity: 0;
+        transform: translateY(-15px) scale(0.98);
+        pointer-events: none;
+        transition: all 0.35s ease;
     }
 
-    .fila{
-      flex-direction: column;
+    #menu-toggle:checked+.menu-icon+.nav ul {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+    }
+
+    .fila {
+        flex-direction: column;
     }
 }

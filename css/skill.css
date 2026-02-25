@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url(../img/fondo.png) center/cover no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/fondo.png) center/cover no-repeat;
     color: #fff;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .logo a:hover {
-    text-shadow: 0 0 10px rgba(0,191,255,0.6);
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
 }
 
 .nav ul {
@@ -148,7 +148,7 @@ header {
     height: 20px;
     border-radius: 20px;
     position: relative;
-    border: 1px solid rgba(0,191,255,0.4);
+    border: 1px solid rgba(0, 191, 255, 0.4);
     overflow: visible;
 }
 
@@ -161,7 +161,7 @@ header {
     position: relative;
     border-radius: 20px;
     transition: width 1.5s ease;
-    box-shadow: 0 0 15px rgba(0,191,255,0.4);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
 }
 
 .progreso span {
@@ -178,16 +178,36 @@ header {
     align-items: center;
     justify-content: center;
     border: 2px solid #000;
-    box-shadow: 0 0 10px rgba(0,191,255,0.6);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
 }
 
-.progreso.html { width: 80%; }
-.progreso.com { width: 75%; }
-.progreso.team { width: 50%; }
-.progreso.pm { width: 40%; }
-.progreso.js { width: 0%; }
-.progreso.node { width: 0%; }
-.progreso.react { width: 0%; }
+.progreso.html {
+    width: 80%;
+}
+
+.progreso.com {
+    width: 75%;
+}
+
+.progreso.team {
+    width: 50%;
+}
+
+.progreso.pm {
+    width: 40%;
+}
+
+.progreso.js {
+    width: 0%;
+}
+
+.progreso.node {
+    width: 0%;
+}
+
+.progreso.react {
+    width: 0%;
+}
 
 footer {
     background: rgba(0, 0, 0, 0.9);
@@ -220,29 +240,29 @@ footer {
     background-color: #00bfff;
     color: #000;
     transform: scale(1.15);
-    box-shadow: 0 0 15px rgba(0,191,255,0.6);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    .menu-icon{
+    .menu-icon {
         display: block;
     }
 
-    .nav{
+    .nav {
         position: fixed;
         top: 63px;
         right: 0;
         width: 220px;
     }
 
-    .nav ul{
+    .nav ul {
         flex-direction: column;
         background: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(10px);
         padding: 20px;
         border-radius: 12px;
-        border: 1px solid rgba(0,191,255,0.4);
+        border: 1px solid rgba(0, 191, 255, 0.4);
         gap: 18px;
 
         position: absolute;
@@ -255,13 +275,13 @@ footer {
         transition: all 0.35s ease;
     }
 
-    #menu-toggle:checked + .menu-icon + .nav ul{
+    #menu-toggle:checked+.menu-icon+.nav ul {
         opacity: 1;
         transform: translateY(0) scale(1);
         pointer-events: auto;
     }
 
-    .fila{
+    .fila {
         flex-direction: column;
         gap: 30px;
     }
