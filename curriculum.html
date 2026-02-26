@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículum</title>
+<script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/curriculum.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="container-header">
+<header>
+
+<div class="logo">
+<a href="index.html">JVFED</a>
+</div>
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">
+<i class="fa-solid fa-bars"></i>
+</label>
+
+<nav class="nav">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="sobremi.html">Sobre Mí</a></li>
+<li><a href="skill.html">Skills</a></li>
+<li><a href="curriculum.html" class="active">Currículum</a></li>
+<li><a href="protafolio.html">Portafolio</a></li>
+<li><a href="contactenos.html">Contacto</a></li>
+</ul>
+</nav>
+
+</header>
+</div>
+
+<!-- CURRICULUM -->
+<section class="curriculum reveal">
+
+<div class="container-section">
+
+<h2>Currículum</h2>
+
+<div class="timeline">
+
+<div class="col izquierda">
+
+<div class="item">
+<h3>Tecnico en Sistemas</h3>
+<h4>Servicio Nacional de Aprendizaje SENA Articulacion con la Media</h4>
+<span class="fecha">2022 - 2024</span>
+<p>Tecnica En Sistemas</p>
+</div>
+
+<div class="item">
+<h3>Ingenieria Multimedia</h3>
+<h4>Universidad Nacional a Distancia UNAD</h4>
+<span class="fecha">2025 - Cursando</span>
+<p>Ingeniera Multimedia</p>
+</div>
+
+</div>
+
+<div class="linea-vertical"></div>
+
+<div class="col derecha">
+
+<div class="item">
+<h3>Analisis y Desarrollo de Software</h3>
+<h4>SENA</h4>
+<span class="fecha">2025 - 2027</span>
+<p>Creacio digital Interfaz Movil.</p>
+</div>
+
+
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="redes">
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</footer>
+
+<!-- SCROLL REVEAL -->
+<script>
+window.addEventListener('scroll', function(){
+const reveals = document.querySelectorAll('.reveal');
+
+reveals.forEach(reveal => {
+const windowHeight = window.innerHeight;
+const revealTop = reveal.getBoundingClientRect().top;
+const revealPoint = 100;
+
+if(revealTop < windowHeight - revealPoint){
+reveal.classList.add('active');
+}
+});
+});
+</script>
+
+</body>
+</html>
