@@ -3,109 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/skill.css">
     <title>Skills</title>
+
+    <link rel="stylesheet" href="./css/skill.css">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-     <div class="container-header">
-     <header>
-     <div class="logo">
-         <a href="./index.html">YALVF</a>
-     </div>
-     
-     <input type="checkbox" id="menu-toggle" />
-     <label for="menu-toggle" class="menu-icon">
-       <i class="fa-solid fa-bars"></i>
-     </label>
+<div class="container-header">
+    <header>
 
-     <nav class="nav">
-         <ul>
-             <li><a href="./index.html">Inicio</a></li>
-             <li><a href="./sobremi.html">Sobre Mi</a></li>
-             <li><a href="./skill.html">Skills</a></li>
-             <li><a href="./curriculum.html">Curriculum</a></li>
-             <li><a href="./portafolio.html">Portafolio</a></li>
-             <li><a href="./contactenos.html">Contacto</a></li>
-         </ul>
-     </nav>
+        <div class="logo">
+            <a href="./index.html">YALVF</a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./sobremi.html">Sobre Mi</a></li>
+                <li><a href="./skill.html" class="active">Skills</a></li>
+                <li><a href="./curriculum.html">Curriculum</a></li>
+                <li><a href="./portafolio.html">Portafolio</a></li>
+                <li><a href="./contactenos.html">Contacto</a></li>
+            </ul>
+        </nav>
+
     </header>
-    </div>
+</div>
 
-    <section id="skills" class="skills">  
-  <div class="container-section">
-    <h2>Skills</h2>
-    <div class="fila">
-      <div class="col">
-        <h3>Technical Skills</h3>
-        <div class="skills">
-          <span>JavaScript</span>
-          <div class="barra-skills">
-            <div class="progreso">
-                <span>20%</span>
+<section class="skills-section">
+    <div class="container-section">
+
+        <h2>Skills</h2>
+
+        <div class="fila">
+
+            <div class="col">
+                <h3>Technical Skills</h3>
+
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="barra">
+                        <div class="progreso js">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>HTML & CSS</span>
+                    <div class="barra">
+                        <div class="progreso html">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>Node JS</span>
+                    <div class="barra">
+                        <div class="progreso node">
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>React</span>
+                    <div class="barra">
+                        <div class="progreso react">
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <span>HTML y CSS</span>
-          <div class="barra-skills">
-            <div class="progreso">
-                <span>70%</span>
+            <div class="col">
+                <h3>Professional Skills</h3>
+
+                <div class="skill-item">
+                    <span>Comunicación</span>
+                    <div class="barra">
+                        <div class="progreso comunicacion">
+                            <span>30%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>Trabajo en Equipo</span>
+                    <div class="barra">
+                        <div class="progreso equipo">
+                            <span>60%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span>Project Management</span>
+                    <div class="barra">
+                        <div class="progreso manager">
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
 
-          <span>Node JS</span>
-          <div class="barra-skills">
-           <div class="progreso">
-             <span>10%</span>
-           </div>
-          </div>
-
-          <span>React</span>
-          <div class="barra-skills">
-            <div class="progreso">
-                <span>10%</span>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="col">
-        <h3>Professional Skills</h3>
-        <div class="skills">
-          <span>Comunicación</span>
-          <div class="barra-skills">
-           <div class="progreso">
-             <span>30%</span>
-           </div>
-          </div>
-
-          <span>Trabajo en Equipo</span>
-          <div class="barra-skills">
-           <div class="progreso">
-            <span>60%</span>
-           </div>
-          </div>
-
-          <span>Project Manager</span>
-          <div class="barra-skills">
-           <div class="progreso">
-            <span>10%</span>
-          </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
- <footer>
-    <div class="redes">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+<footer>
+    <div class="footer-content">
+        <p>© 2026 YALVF — Todos los derechos reservados</p>
+
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
     </div>
 </footer>
+
 </body>
 </html>
