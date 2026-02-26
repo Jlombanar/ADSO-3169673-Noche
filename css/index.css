@@ -219,7 +219,7 @@ section {
 }
 
 /* ═══════════════════════════════════
-   FOOTER
+FOOTER
 ═══════════════════════════════════ */
 footer {
     background-color: black;
@@ -231,7 +231,7 @@ footer {
 }
 
 /* ═══════════════════════════════════
-   RESPONSIVE DESIGN (Móviles)
+RESPONSIVE DESIGN (Móviles)
 ═══════════════════════════════════ */
 @media screen and (max-width: 768px) {
 
@@ -257,5 +257,128 @@ footer {
     #menu-toggle:checked + .menu-icon + .nav ul {
         display: flex;
         align-items: center;
+    }
+}
+
+/* ═══════════════════════════════════
+RESPONSIVE EXTRA - Tablets (1024px)
+═══════════════════════════════════ */
+@media screen and (max-width: 1024px) {
+
+    .container-header header {
+        padding: 15px;
+    }
+
+    .container-banner {
+        max-width: 420px;
+        padding: 35px;
+    }
+
+    .container-banner h1 {
+        font-size: 34px;
+    }
+
+    .container-img img {
+        width: 75%;
+    }
+}
+
+
+/* ═══════════════════════════════════
+RESPONSIVE - Tablets pequeñas (768px)
+═══════════════════════════════════ */
+@media screen and (max-width: 768px) {
+
+    .inicio {
+        min-height: 100vh;
+        padding: 100px 20px 40px 20px;
+    }
+
+    .container-banner {
+        width: 100%;
+        max-width: 380px;
+        padding: 30px 20px;
+    }
+
+    .container-banner h1 {
+        font-size: 28px;
+    }
+
+    .container-banner h2 {
+        font-size: 14px;
+    }
+
+    .container-img img {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .redes {
+        gap: 15px;
+    }
+
+    .redes a {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+}
+
+
+/* ═══════════════════════════════════
+RESPONSIVE - Móviles pequeños (480px)
+═══════════════════════════════════ */
+@media screen and (max-width: 480px) {
+
+    .container-banner {
+        padding: 25px 15px;
+        border-radius: 25px;
+    }
+
+    .container-banner h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .container-banner h2 {
+        font-size: 13px;
+    }
+
+    .container-img img {
+        width: 65%;
+        border-width: 6px;
+    }
+
+    .logo a {
+        font-size: 28px;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 15px 10px;
+    }
+}
+
+
+/* ═══════════════════════════════════
+RESPONSIVE - Pantallas grandes (1400px+)
+═══════════════════════════════════ */
+@media screen and (min-width: 1400px) {
+
+    .container-banner {
+        max-width: 520px;
+        padding: 50px;
+    }
+
+    .container-banner h1 {
+        font-size: 46px;
+    }
+
+    .container-banner h2 {
+        font-size: 18px;
+    }
+
+    .container-img img {
+        width: 75%;
     }
 }

@@ -451,3 +451,176 @@ RESPONSIVE COMPLETO
     }
 
 }
+
+/* ═══════════════════════════════════
+RESPONSIVE EXTRA - 1200px
+═══════════════════════════════════ */
+@media screen and (max-width:1200px){
+
+    .container-section{
+        padding: 50px;
+    }
+
+    .curriculum-section h2{
+        font-size: 42px;
+    }
+
+    .timeline{
+        gap: 40px;
+    }
+}
+
+
+/* ═══════════════════════════════════
+RESPONSIVE - 768px
+═══════════════════════════════════ */
+@media screen and (max-width:768px){
+
+    .container-section{
+        padding: 30px 20px;
+    }
+
+    .curriculum-section h2{
+        font-size: 28px;
+    }
+
+    .subtitle{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .timeline-column{
+        padding-left: 25px;
+    }
+
+    .content{
+        padding: 18px;
+    }
+
+    .content h4{
+        font-size: 15px;
+    }
+
+    .institution{
+        font-size: 13px;
+    }
+
+    .date{
+        font-size: 12px;
+    }
+
+    .content p{
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .professional-profile{
+        padding: 25px 18px;
+    }
+
+    .professional-profile p{
+        font-size: 14px;
+    }
+}
+
+
+/* ═══════════════════════════════════
+RESPONSIVE - 480px
+═══════════════════════════════════ */
+@media screen and (max-width:480px){
+
+    .container-section{
+        padding: 22px 15px;
+        border-radius: 20px;
+    }
+
+    .curriculum-section h2{
+        font-size: 24px;
+    }
+
+    .subtitle{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .timeline::before{
+        left: 8px;
+    }
+
+    .timeline-column{
+        padding-left: 20px;
+    }
+
+    .timeline-column h3{
+        font-size: 18px;
+    }
+
+    .content{
+        padding: 15px;
+    }
+
+    .content h4{
+        font-size: 14px;
+    }
+
+    .content p{
+        font-size: 12px;
+    }
+
+    .professional-profile{
+        padding: 20px 15px;
+    }
+
+    .professional-profile h3{
+        font-size: 18px;
+    }
+
+    .professional-profile p{
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .logo a{
+        font-size: 28px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+}
+
+
+/* ═══════════════════════════════════
+PANTALLAS GRANDES 1400px+
+═══════════════════════════════════ */
+@media screen and (min-width:1400px){
+
+    .container-section{
+        max-width: 1200px;
+        padding: 70px;
+    }
+
+    .curriculum-section h2{
+        font-size: 54px;
+    }
+
+    .subtitle{
+        font-size: 18px;
+    }
+
+    .timeline-column h3{
+        font-size: 26px;
+    }
+
+    .content h4{
+        font-size: 20px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .professional-profile p{
+        font-size: 16px;
+    }
+}
