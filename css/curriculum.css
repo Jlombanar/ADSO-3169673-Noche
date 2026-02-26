@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 80px;
+}
+
+.fondo-inicio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.header {
+  height: 95px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 3.0rem;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #f7f4f4;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 17px;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+  color: rgb(255, 94, 0);
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-icon {
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.hero-section {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+  font-family: Papyrus, fantasy;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.curriculum-section {
+  max-width: 1100px;
+  margin: -100px auto 0 auto;
+  padding: 80px 20px;
+  flex: 1;
+}
+
+.cv-block {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 15px;
+  padding: 35px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.cv-block h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgb(207, 127, 74);
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.cv-block p {
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.education-item {
+  padding-left: 25px;
+  margin-bottom: 35px;
+  border-left: 3px solid rgb(255, 94, 0);
+}
+
+.education-item h3 {
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.education-place {
+  display: block;
+  font-size: 15px;
+  color: #ccc;
+  font-family: 'Work Sans', Arial, sans-serif;
+}
+
+.education-year {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 94, 0);
+}
+
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 15px; 
+}
+
+.experience-item ul {
+  padding-left: 20px;
+}
+
+.experience-item li {
+  margin-bottom: 8px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 15px;
+}
+
+.skills-list li {
+  list-style: none;
+  background: rgba(255, 94, 0, 0.15);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+
+}
+
+.footer {
+  background-color: #030303;
+  padding: 18px 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-container p {
+  margin-bottom: 15px; 
+}
+
+.social-links a {
+  color: #f0e8e8;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.footer .social-links a:hover {
+  color: #ff6600;
+}
+
+@media (max-width: 768px) {
+
+  .nav-icon {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 95px;
+    right: 0;
+    width: 220px;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .6);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  #nav-toggle:checked ~ .nav-menu {
+    display: block;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+}
