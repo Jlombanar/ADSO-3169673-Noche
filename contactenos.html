@@ -12,8 +12,11 @@
     <header>
         <nav class="nav-container">
             <input type="checkbox" id="menu-check">
+            
             <label for="menu-check" class="menu-toggle">
-                <i class="fas fa-bars"></i>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </label>
 
             <ul class="nav-list">
@@ -51,19 +54,19 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/juan-angarita-675552298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/juanangarita360"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" id="form-contacto">
                 <div class="input-group">
-                    <input type="text" placeholder="Nombre completo" required>
-                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
                 </div>
-                <input type="text" placeholder="Asunto" required>
-                <textarea placeholder="Tu mensaje..." rows="6" required></textarea>
+                <input type="text" id="asunto" placeholder="Asunto" required>
+                <textarea id="mensaje" placeholder="Tu mensaje..." rows="6" required></textarea>
                 <button type="submit" class="btn-submit">Enviar Mensaje</button>
             </form>
         </div>
@@ -72,6 +75,30 @@
     <footer>
         <p>&copy; 2026 - Juan David Angarita Rojas</p>
     </footer>
+
+    <script>
+        document.getElementById('form-contacto').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que la página se recargue
+            
+            
+            const telefono = "573238004860"; // NÚMERO
+            
+            // Captura de datos
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const asunto = document.getElementById('asunto').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Formateo del mensaje para WhatsApp
+            const textoWhatsApp = `Hola Juan! Mi nombre es ${nombre}.%0A%0A*Asunto:* ${asunto}%0A*Correo:* ${email}%0A*Mensaje:* ${mensaje}`;
+
+            // Crear el enlace final
+            const url = `https://api.whatsapp.com/send?phone=${telefono}&text=${textoWhatsApp}`;
+
+            // Redireccionar
+            window.open(url, '_blank');
+        });
+    </script>
 
 </body>
 </html>

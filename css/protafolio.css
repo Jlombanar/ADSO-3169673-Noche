@@ -1,6 +1,4 @@
-/* =========================================
-   ESTILOS BASE Y NAVEGACIÓN (Consistente)
-   ========================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -19,13 +17,13 @@ body {
     overflow-x: hidden;
 }
 
-/* Reutilizamos la navegación que ya funciona */
+
 header {
     position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000; 
     background: rgba(0, 0, 0, 0.85); 
     backdrop-filter: blur(10px); 
     padding: 20px 0;
@@ -43,11 +41,21 @@ header {
 
 #menu-check { display: none; }
 
+
 .menu-toggle {
     display: none;
-    color: #ffffff;
-    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 6px;
     cursor: pointer;
+    z-index: 2005;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.4s;
 }
 
 .nav-list {
@@ -87,9 +95,7 @@ header {
     background: linear-gradient(to right, var(--accent-purple), var(--accent-blue));
 }
 
-/* =========================================
-   SECCIÓN PORTAFOLIO
-   ========================================= */
+
 .portfolio-container {
     padding: 160px 10% 80px;
     min-height: 100vh;
@@ -125,7 +131,7 @@ header {
     line-height: 1.8;
 }
 
-/* Grid de Tarjetas */
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -148,7 +154,6 @@ header {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Imagen del Proyecto */
 .project-image {
     position: relative;
     height: 250px;
@@ -167,7 +172,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Capa de Enlaces (Overlay) */
 .project-overlay {
     position: absolute;
     top: 0;
@@ -199,7 +203,6 @@ header {
     transform: scale(1.2);
 }
 
-/* Información del Proyecto */
 .project-info {
     padding: 30px;
 }
@@ -217,7 +220,6 @@ header {
     margin-bottom: 25px;
 }
 
-/* Etiquetas Tecnológicas */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -234,9 +236,7 @@ header {
     border: 1px solid rgba(37, 117, 252, 0.2);
 }
 
-/* =========================================
-   FOOTER Y RESPONSIVO
-   ========================================= */
+
 footer {
     padding: 40px 0;
     text-align: center;
@@ -245,8 +245,8 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle { display: block; }
+@media (max-width: 900px) {
+    .menu-toggle { display: flex; } 
     
     .nav-container { justify-content: flex-end; padding: 0 30px; }
 
@@ -256,14 +256,29 @@ footer {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.98);
+        background: var(--accent-purple);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: 0.4s;
+        gap: 40px;
+        transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 2004;
     }
 
     #menu-check:checked ~ .nav-list { right: 0; }
+
+    /* --- ANIMACIÓN BARRAS A X --- */
+    #menu-check:checked ~ .menu-toggle .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    #menu-check:checked ~ .menu-toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-check:checked ~ .menu-toggle .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav-list li a { font-size: 1.5rem; opacity: 1; }
 
     .portfolio-header h2 { font-size: 2.5rem; }
     .portfolio-container { padding-top: 120px; }
