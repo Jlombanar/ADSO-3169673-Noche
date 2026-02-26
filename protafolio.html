@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio</title>
+<script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/portafolio.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="container-header">
+<header>
+
+<div class="logo">
+<a href="index.html">JVFED</a>
+</div>
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">
+<i class="fa-solid fa-bars"></i>
+</label>
+
+<nav class="nav">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="sobremi.html">Sobre Mí</a></li>
+<li><a href="skill.html">Skills</a></li>
+<li><a href="curriculum.html">Currículum</a></li>
+<li><a href="portafolio.html" class="active">Portafolio</a></li>
+<li><a href="contactenos.html">Contacto</a></li>
+</ul>
+</nav>
+
+</header>
+</div>
+
+<!-- PORTAFOLIO -->
+<section class="portafolio reveal">
+
+<div class="container-section">
+
+<h2>Portafolio</h2>
+
+<div class="contenedor-portafolio">
+
+<!-- PROYECTO 1 -->
+<div class="card">
+<h3>CineTub</h3>
+<p>
+Plataforma web inspirada en el mundo del cine, con diseño dinámico,
+estructura organizada y experiencia visual atractiva.
+</p>
+<a href="https://fierr7jeylin-dev.github.io/CineTub/" 
+   target="_blank" 
+   class="btn">
+   Ver Proyecto
+</a>
+</div>
+
+<!-- PROYECTO 2 -->
+<div class="card">
+<h3>Menú ADSO Jeylin</h3>
+<p>
+Proyecto web tipo menú digital interactivo, aplicando estilos personalizados,
+diseño moderno y estructura responsive.
+</p>
+<a href="https://fierr7jeylin-dev.github.io/MENUADSOJEYLIN/" 
+   target="_blank" 
+   class="btn">
+   Ver Proyecto
+</a>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="redes">
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</footer>
+
+<!-- SCROLL REVEAL -->
+<script>
+window.addEventListener('scroll', function(){
+const reveals = document.querySelectorAll('.reveal');
+
+reveals.forEach(reveal => {
+const windowHeight = window.innerHeight;
+const revealTop = reveal.getBoundingClientRect().top;
+const revealPoint = 100;
+
+if(revealTop < windowHeight - revealPoint){
+reveal.classList.add('active');
+}
+});
+});
+</script>
+
+</body>
+</html>
