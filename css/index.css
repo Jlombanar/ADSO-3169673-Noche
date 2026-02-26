@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to top, rgba(15,15,15,.100), rgba(30,35,38,1)),
-                url(../img/fondo.png);
+    url(../img/fondo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body {
 }
 
 /* ═══════════════════════════════════
-   HEADER FIJO EN LA PARTE SUPERIOR
+HEADER FIJO EN LA PARTE SUPERIOR
 ═══════════════════════════════════ */
 .container-header {
     background: rgba(0,0,0,0.95);
@@ -59,7 +59,7 @@ body {
 }
 
 /* ═══════════════════════════════════
-   MENÚ DE NAVEGACIÓN
+MENÚ DE NAVEGACIÓN
 ═══════════════════════════════════ */
 .nav ul {
     display: flex;
@@ -101,7 +101,7 @@ body {
 }
 
 /* ═══════════════════════════════════
-   MENÚ RESPONSIVE (sin JavaScript)
+MENÚ RESPONSIVE (sin JavaScript)
 ═══════════════════════════════════ */
 #menu-toggle {
     display: none;
@@ -117,7 +117,7 @@ body {
 }
 
 /* ═══════════════════════════════════
-   SECCIÓN PRINCIPAL (HERO)
+SECCIÓN PRINCIPAL (HERO)
 ═══════════════════════════════════ */
 .inicio {
     flex: 1;
@@ -187,7 +187,7 @@ section {
 }
 
 /* ═══════════════════════════════════
-   REDES SOCIALES
+REDES SOCIALES
 ═══════════════════════════════════ */
 .redes {
     display: flex;
