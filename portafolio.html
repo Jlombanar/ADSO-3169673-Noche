@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+
+  <link rel="stylesheet" href="css/portafolio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Righteous&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
+<header class="navbar">
+  <div class="container-header">
+    <header>
+      <div class="logo">
+        <a href="#">JMSC</a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+  <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="./sobremi.html">Sobre Mi</a>
+      <a href="./skill.html">Skills</a>
+      <a href="./curriculum.html">Curriculum</a>
+      <a href="./portafolio.html">Portafolio</a>
+      <a href="./contactenos.html" class="btn-contact">Contacto</a>
+  </nav>
+</header>
+
+<section class="portfolio">
+  <h2>Mis Proyectos</h2>
+
+  <div class="projects">
+
+    <!-- PROYECTO 1 -->
+    <div class="card">
+      <img src="img/css.png" alt="">
+      <h3>Deportes</h3>
+      <p>Proyecto web en el que relaciona varios deportes</p>
+      <div class="links">
+        <a href="https://jesusmsc178-gif.github.io/deportes/" target="_blank">
+          <i class="fa-brands fa-github"></i> Ver Proyecto
+        </a>
+      </div>
+    </div>
+    <!-- PROYECTO 2 -->
+    <div class="card">
+      <img src="img/csc.png" alt="">
+      <h3>Comidas Rápidas</h3>
+      <p>Sitio web informativo enfocado en comida rápida.</p>
+      <div class="links">
+        <a href=" https://jesusmsc178-gif.github.io/TRABAJO_NCH-1-/" target="_blank">
+          <i class="fa-brands fa-github"></i> Ver Proyecto
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="redes">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</footer>
+
 </body>
 </html>

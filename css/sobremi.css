@@ -66,7 +66,7 @@ body {
 
 .sobremi .fila .col ul strong{
     display: inline-block;
-    color: #1cb698;
+    color: #781cb6;
     width: 120px; 
     text-align: right;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .sobremi .fila .col .container-interes .interes:hover{
-    background-color: #1cb698;
+    background-color: #a21fd6;
     transform: scale(1.1);
 }
 
@@ -114,4 +114,54 @@ body {
   #menu-toggle:checked ~ .nav ul {
     display: flex;
   }
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+.nav ul li a:hover {
+  color: #3b0063;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;  
+}.logo a {
+  font-family: 'Righteous', cursive;
+  font-size: 36px;
+  color: #45097e;
+  text-decoration: none;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+.nav ul li a:hover {
+  color: #3b0063;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #420068;
+  margin-left: auto;
+  border-radius: 20px;
 }

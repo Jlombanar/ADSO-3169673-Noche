@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+.curriculum {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.curriculum h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #6900f2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.container {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.container.left {
+    left: 0;
+}
+
+.container.right {
+    left: 50%;
+}
+
+.content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content h2 {
+    color: #7d00f2;
+}
+
+.content h3 {
+    margin-top: 10px;
+}
+
+.content span {
+    font-size: 14px;
+    color: #6900f2;
+}
+
+/* Círculos */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -8px;
+    background: #6900f2;
+    border-radius: 50%;
+    top: 30px;
+    z-index: 1;
+}
+
+.container.right::after {
+    left: -8px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+    .timeline::after {
+        left: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+
+    .container.right {
+        left: 0%;
+    }
+
+    .container::after {
+        left: 15px;
+    }
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+.nav ul li a:hover {
+  color: #3b0063;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;  
+}
