@@ -23,8 +23,6 @@ background:linear-gradient(135deg,#e0f7f6,#fce4ec);
 color:var(--text-dark);
 }
 
-/* HEADER */
-
 .container-header{
 background:rgba(255,255,255,.7);
 backdrop-filter:blur(12px);
@@ -86,8 +84,6 @@ transition:.3s;
 .nav ul li a:hover::after{
 width:100%;
 }
-
-/* SKILLS */
 
 .skills-section{
 flex:1;
@@ -193,8 +189,6 @@ from{ opacity:0; transform:translateY(40px); }
 to{ opacity:1; transform:translateY(0); }
 }
 
-/* FOOTER */
-
 footer{
 background:var(--primary);
 padding:20px;
@@ -238,8 +232,6 @@ background:linear-gradient(135deg,var(--primary),var(--lilac));
 color:white;
 transform:translateY(-6px) scale(1.1);
 }
-
-/* RESPONSIVE */
 
 #menu-toggle{ display:none; }
 

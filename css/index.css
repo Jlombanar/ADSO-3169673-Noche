@@ -23,8 +23,6 @@ background:linear-gradient(135deg,#e0f7f6,#fce4ec);
 color:var(--text-dark);
 }
 
-/* ═════════ HEADER ═════════ */
-
 .container-header{
 background:rgba(255,255,255,.7);
 backdrop-filter:blur(12px);
@@ -43,7 +41,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 20px;
-position:relative; /* IMPORTANTE para posicionar el menú */
+position:relative; 
 }
 
 .logo a{
@@ -52,8 +50,6 @@ font-size:34px;
 color:var(--primary-dark);
 text-decoration:none;
 }
-
-/* ═════════ MENÚ ═════════ */
 
 .nav ul{
 display:flex;
@@ -90,8 +86,6 @@ transition:.3s;
 width:100%;
 }
 
-/* ═════════ HERO INICIO ═════════ */
-
 .inicio{
 flex:1;
 padding:130px 20px 80px;
@@ -127,8 +121,6 @@ color:#555;
 margin-bottom:30px;
 }
 
-/* ═════════ REDES ═════════ */
-
 .redes{
 display:flex;
 justify-content:center;
@@ -156,8 +148,6 @@ transform:translateY(-8px) scale(1.05);
 box-shadow:0 15px 30px rgba(64,224,208,.4);
 }
 
-/* ═════════ FOOTER ═════════ */
-
 footer{
 background:var(--primary);
 color:white;
@@ -166,8 +156,6 @@ padding:20px;
 font-weight:500;
 margin-top:auto;
 }
-
-/* ═════════ ANIMACIÓN ═════════ */
 
 @keyframes fadeUp{
 from{
@@ -179,8 +167,6 @@ opacity:1;
 transform:translateY(0);
 }
 }
-
-/* ═════════ RESPONSIVE ═════════ */
 
 #menu-toggle{
 display:none;

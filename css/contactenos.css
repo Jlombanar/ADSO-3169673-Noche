@@ -23,19 +23,15 @@ background:linear-gradient(135deg,#e0f7f6,#fce4ec);
 color:var(--text-dark);
 }
 
-/* Evita que el header tape el contenido */
 body{
 padding-top:80px;
 }
 
-/* Arreglo subtitle */
 .subtitle{
 color:#666;
 max-width:700px;
 margin:0 auto 50px auto;
 }
-
-/* MAPA */
 
 .map-container{
 width:100%;
@@ -47,8 +43,6 @@ box-shadow:0 15px 40px rgba(64,224,208,.25);
 .map-container iframe{
 display:block;
 }
-
-/* HEADER */
 
 .container-header{
 background:rgba(255,255,255,.7);
@@ -113,8 +107,6 @@ transition:.3s;
 width:100%;
 }
 
-/* HAMBURGUESA */
-
 #menu-toggle{
 display:none;
 }
@@ -125,8 +117,6 @@ font-size:24px;
 cursor:pointer;
 color:var(--primary-dark);
 }
-
-/* CONTACTO */
 
 .contact-section{
 flex:1;
@@ -159,15 +149,11 @@ max-width:700px;
 margin:auto;
 }
 
-/* GRID */
-
 .contact-container{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
 }
-
-/* CARD */
 
 .contact-card{
 background:rgba(255,255,255,.85);
@@ -181,8 +167,6 @@ transition:.4s;
 transform:translateY(-8px);
 box-shadow:0 25px 50px rgba(64,224,208,.35);
 }
-
-/* FORM */
 
 form{
 display:flex;
@@ -228,8 +212,6 @@ transform:scale(1.05);
 box-shadow:0 10px 20px rgba(64,224,208,.4);
 }
 
-/* INFO */
-
 .info-card{
 display:flex;
 flex-direction:column;
@@ -250,8 +232,6 @@ font-size:18px;
 color:var(--primary);
 }
 
-/* FOOTER */
-
 footer{
 background:var(--primary);
 color:white;
@@ -262,14 +242,10 @@ width:100%;
 margin-top:auto;
 }
 
-/* ANIMACIÓN */
-
 @keyframes fadeUp{
 from{opacity:0;transform:translateY(40px);}
 to{opacity:1;transform:translateY(0);}
 }
-
-/* RESPONSIVE */
 
 @media(max-width:768px){
 

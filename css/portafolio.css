@@ -24,10 +24,8 @@ color:var(--text-dark);
 }
 
 body{
-padding-top:80px; /* altura real del header */
+padding-top:80px; 
 }
-
-/* HEADER */
 
 .container-header{
 background:rgba(255,255,255,.7);
@@ -92,7 +90,6 @@ transition:.3s;
 width:100%;
 }
 
-/* HAMBURGUESA */
 
 #menu-toggle{
 display:none;
@@ -105,11 +102,9 @@ cursor:pointer;
 color:var(--primary-dark);
 }
 
-/* PORTAFOLIO */
-
 .portfolio-section{
 flex:1;
-padding:160px 20px 100px; /* más espacio arriba */
+padding:160px 20px 100px; 
 animation:fadeUp 1s ease forwards;
 }
 
@@ -141,15 +136,12 @@ max-width:700px;
 margin:0 auto 50px auto;
 }
 
-/* GRID */
-
 .portfolio-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:30px;
 }
 
-/* CARD */
 
 .portfolio-card{
 background:rgba(255,255,255,.8);
@@ -198,8 +190,6 @@ margin-bottom:20px;
 color:#555;
 }
 
-/* LINKS */
-
 .links{
 display:flex;
 justify-content:center;
@@ -224,8 +214,6 @@ transform:scale(1.08);
 box-shadow:0 10px 20px rgba(64,224,208,.4);
 }
 
-/* FOOTER */
-
 footer{
 background:var(--primary);
 color:white;
@@ -236,14 +224,11 @@ width:100%;
 margin-top:auto;
 }
 
-/* ANIMACIÓN */
-
 @keyframes fadeUp{
 from{opacity:0;transform:translateY(40px);}
 to{opacity:1;transform:translateY(0);}
 }
 
-/* RESPONSIVE */
 
 @media(max-width:1000px){
 .portfolio-grid{

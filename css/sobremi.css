@@ -23,8 +23,6 @@ background:linear-gradient(135deg,#e0f7f6,#fce4ec);
 color:var(--text-dark);
 }
 
-/* ═════════ HEADER ═════════ */
-
 .container-header{
 background:rgba(255,255,255,.7);
 backdrop-filter:blur(12px);
@@ -52,8 +50,6 @@ font-size:34px;
 color:var(--primary-dark);
 text-decoration:none;
 }
-
-/* ═════════ MENÚ ═════════ */
 
 .nav ul{
 display:flex;
@@ -89,8 +85,6 @@ transition:.3s;
 width:100%;
 }
 
-/* ═════════ SECCIÓN SOBRE MI ═════════ */
-
 .sobremi{
 flex:1;
 padding:130px 20px 80px;
@@ -124,8 +118,6 @@ color:var(--primary-dark);
 font-weight:600;
 }
 
-/* ═════════ COLUMNAS ═════════ */
-
 .fila{
 display:flex;
 flex-wrap:wrap;
@@ -157,8 +149,6 @@ color:var(--primary-dark);
 font-family:'Righteous',cursive;
 }
 
-/* ═════════ LISTA DATOS ═════════ */
-
 .col ul{
 list-style:none;
 }
@@ -175,8 +165,6 @@ font-size:14px;
 .col ul strong{
 color:#888;
 }
-
-/* ═════════ INTERESES ═════════ */
 
 .container-interes{
 display:flex;
@@ -220,8 +208,6 @@ box-shadow:0 15px 30px rgba(64,224,208,.4);
 color:white;
 }
 
-/* ═════════ FOOTER ═════════ */
-
 footer{
 background:var(--primary);
 color:white;
@@ -232,7 +218,6 @@ width:100%;
 margin-top:auto;
 }
 
-/* ═════════ ANIMACIÓN ═════════ */
 
 @keyframes fadeUp{
 from{
@@ -244,8 +229,6 @@ opacity:1;
 transform:translateY(0);
 }
 }
-
-/* ═════════ RESPONSIVE ═════════ */
 
 #menu-toggle{
 display:none;

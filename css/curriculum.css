@@ -23,8 +23,6 @@ background:linear-gradient(135deg,#e0f7f6,#fce4ec);
 color:var(--text-dark);
 }
 
-/* HEADER */
-
 .container-header{
 background:rgba(255,255,255,.7);
 backdrop-filter:blur(12px);
@@ -52,8 +50,6 @@ font-size:34px;
 color:var(--primary-dark);
 text-decoration:none;
 }
-
-/* NAV */
 
 .nav ul{
 display:flex;
@@ -90,8 +86,6 @@ transition:.3s;
 width:100%;
 }
 
-/* HAMBURGUESA */
-
 #menu-toggle{
 display:none;
 }
@@ -102,8 +96,6 @@ font-size:24px;
 cursor:pointer;
 color:var(--primary-dark);
 }
-
-/* SECCIÓN */
 
 .curriculum{
 flex:1;
@@ -123,8 +115,6 @@ margin-bottom:10px;
 margin-bottom:50px;
 color:#666;
 }
-
-/* TIMELINE (tu diseño intacto) */
 
 .timeline{
 position:relative;
@@ -191,8 +181,6 @@ right:-9px;
 left:-9px;
 }
 
-/* FOOTER ESTABLE */
-
 footer{
 background:var(--primary);
 color:white;
@@ -203,14 +191,10 @@ width:100%;
 margin-top:auto;
 }
 
-/* ANIMACIÓN */
-
 @keyframes fadeUp{
 from{opacity:0;transform:translateY(40px);}
 to{opacity:1;transform:translateY(0);}
 }
-
-/* RESPONSIVE */
 
 @media(max-width:768px){
 
