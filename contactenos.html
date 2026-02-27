@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto</title>
+<script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/contactenos.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="container-header">
+<header>
+
+<div class="logo">
+<a href="index.html">JVFED</a>
+</div>
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">
+<i class="fa-solid fa-bars"></i>
+</label>
+
+<nav class="nav">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="sobremi.html">Sobre Mí</a></li>
+<li><a href="skill.html">Skills</a></li>
+<li><a href="curriculum.html">Currículum</a></li>
+<li><a href="portafolio.html">Portafolio</a></li>
+<li><a href="contacto.html" class="active">Contacto</a></li>
+</ul>
+</nav>
+
+</header>
+</div>
+
+<!-- CONTACTO -->
+<section class="contacto reveal">
+
+<div class="container-section">
+
+<h2>Contacto</h2>
+
+<div class="contacto-grid">
+
+<!-- FORMULARIO -->
+<div class="formulario">
+
+<form>
+<input type="text" placeholder="Espacio para nombre">
+<input type="email" placeholder="Espacio para correo">
+<input type="tel" placeholder="Espacio para teléfono">
+<textarea rows="5" placeholder="Espacio para mensaje"></textarea>
+<button type="submit">Enviar Mensaje</button>
+</form>
+
+</div>
+
+<!-- MAPA GPS -->
+<div class="mapa">
+
+<iframe 
+src="https://www.google.com/maps?q=Colombia&output=embed"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="redes">
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</footer>
+
+<!-- SCROLL REVEAL -->
+<script>
+window.addEventListener('scroll', function(){
+const reveals = document.querySelectorAll('.reveal');
+
+reveals.forEach(reveal => {
+const windowHeight = window.innerHeight;
+const revealTop = reveal.getBoundingClientRect().top;
+const revealPoint = 100;
+
+if(revealTop < windowHeight - revealPoint){
+reveal.classList.add('active');
+}
+});
+});
+</script>
+
+</body>
+</html>
