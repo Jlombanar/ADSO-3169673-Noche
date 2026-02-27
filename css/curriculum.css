@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+:root {
+  --color-primary: #6C63FF;
+  --color-secondary: #00D4FF;
+  --color-accent: #FF7A00;
+  --color-background: #0F172A;
+  --color-surface: #111827;
+  --color-text: #E5E7EB;
+  --color-text-muted: #9CA3AF;
+}
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Work Sans', sans-serif;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+min-height: 100vh;
+background: linear-gradient(
+      to top,
+      rgba(15, 23, 42, 0.85),
+      rgba(15, 23, 42, 1)
+   ),
+   url(../img/fondo.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: var(--color-text);
+}
+
+
+.container-header {
+background: #000;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 99;
+}
+
+.container-header header {
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+}
+
+.logo a {
+font-family: 'Righteous', cursive;
+font-size: 36px;
+color: var(--color-primary);
+text-decoration: none;
+}
+
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+.nav ul li a {
+color: var(--color-text);
+text-decoration: none;
+padding: 5px;
+transition: 0.3s;
+}
+
+.nav ul li a:hover {
+color: var(--color-secondary);
+text-shadow: 0 0 8px var(--color-secondary);
+}
+
+
+#menu-toggle {
+display: none;
+}
+
+.menu-icon {
+display: none;
+font-size: 24px;
+cursor: pointer;
+color: var(--color-primary);
+margin-left: auto;
+border-radius: 20px;
+}
+
+
+.inicio {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 80px;
+}
+
+.container-banner {
+background-color: var(--color-surface);
+padding: 30px;
+max-width: 450px;
+margin: auto;
+text-align: center;
+border-radius: 40px;
+box-shadow: 0 0 25px rgba(108, 99, 255, 0.35);
+}
+
+.container-img img {
+margin-top: 40px;
+border: 10px solid var(--color-primary);
+width: 80%;
+border-radius: 100%;
+display: block;
+margin: auto;
+}
+
+.container-banner h1 {
+margin-top: 40px;
+font-size: 42px;
+font-family: 'Righteous', cursive;
+color: var(--color-text);
+}
+
+.container-banner h2 {
+font-size: 15px;
+font-weight: normal;
+color: var(--color-text-muted);
+}
+
+.redes {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.redes a {
+color: var(--color-text);
+display: inline-flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+border: 1px solid var(--color-text);
+border-radius: 50%;
+width: 42px;
+height: 42px;
+font-size: 20px;
+transition: 0.3s;
+}
+
+.redes a:hover {
+background: var(--color-accent);
+border-color: var(--color-a);
+transform: scale(1.1);
+}
+
+
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-primary);
+  margin-left: auto;
+}
+
+
+.curriculum {
+  padding: 120px 20px 60px; 
+  background: transparent;
+}
+
+.curriculum .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.curriculum h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 60px;
+  color: var(--color-primary);
+  font-family: 'Righteous', cursive;
+}
+
+
+.curriculum-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+
+.curriculum-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: var(--color-secondary);
+  box-shadow: 0 0 12px var(--color-secondary);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section h2 {
+  color: var(--color-secondary);
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+
+.item {
+  position: relative;
+  background: var(--color-surface);
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 20px rgba(0,0,0,.35);
+  transition: .3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(108,99,255,.25);
+}
+
+
+.item::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  width: 14px;
+  height: 14px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--color-primary);
+}
+
+
+.section:first-child .item::before {
+  right: -47px;
+}
+
+
+.section:last-child .item::before {
+  left: -47px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item-header h3 {
+  font-size: 18px;
+}
+
+.year {
+  background: var(--color-primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.institution {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  margin: 6px 0 10px;
+}
+
+.description-list {
+  padding-left: 18px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+
+footer {
+  background-color: #000;
+  color: var(--color-text);
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.redes a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  font-size: 18px;
+  transition: .3s;
+}
+
+.redes a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav ul {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 240px;
+    height: calc(100vh - 70px);
+    background: var(--color-surface);
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    transition: .3s;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav ul {
+    right: 0;
+  }
+
+  .curriculum-content {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-content::before {
+    left: 20px;
+  }
+
+  .item {
+    margin-left: 40px;
+  }
+
+  .item::before {
+    left: -30px !important;
+  }
+
+  .curriculum h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 24px;
+  }
+
+  .curriculum h1 {
+    font-size: 26px;
+  }
+}

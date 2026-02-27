@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-/* 🎨 VARIABLES DE COLOR */
+
 :root {
-  --color-primary: #6C63FF;      /* morado neón */
-  --color-secondary: #00D4FF;    /* azul neón */
-  --color-accent: #FF7A00;       /* naranja */
-  --color-background: #0F172A;   /* fondo oscuro */
-  --color-surface: #111827;      /* tarjetas */
-  --color-text: #E5E7EB;         /* texto principal */
-  --color-text-muted: #9CA3AF;   /* texto suave */
+  --color-primary: #6C63FF;      
+  --color-secondary: #00D4FF;    
+  --color-accent: #FF7A00;      
+  --color-background: #0F172A;   
+  --color-surface: #111827;      
+  --color-text: #E5E7EB;         
+  --color-text-muted: #9CA3AF;   
 }
 
 
@@ -39,51 +39,50 @@ body {
 
 
 .container-header {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-primary);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99;
+background: #000;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 99;
 }
 
 .container-header header {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
 }
 
 .logo a {
-  font-family: 'Righteous', cursive;
-  font-size: 36px;
-  color: var(--color-primary);
-  text-decoration: none;
-  text-shadow: 0 0 10px var(--color-primary);
+font-family: 'Righteous', cursive;
+font-size: 36px;
+color: var(--color-primary);
+text-decoration: none;
 }
 
 
 .nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+display: flex;
+list-style: none;
+gap: 20px;
 }
 
 .nav ul li a {
-  color: var(--color-text);
-  text-decoration: none;
-  padding: 5px;
-  transition: 0.3s;
+color: var(--color-text);
+text-decoration: none;
+padding: 5px;
+transition: 0.3s;
 }
 
 .nav ul li a:hover {
-  color: var(--color-secondary);
-  text-shadow: 0 0 8px var(--color-secondary);
+color: var(--color-secondary);
+text-shadow: 0 0 8px var(--color-secondary);
 }
+
+
 
 /* oculto en escritorio */
 .menu-icon {
@@ -121,7 +120,6 @@ display: none;
   text-align: center;
   color: var(--color-primary);
   margin-bottom: 50px;
-  text-shadow: 0 0 12px var(--color-primary);
 }
 
 .skills .fila {
@@ -146,9 +144,7 @@ display: none;
   margin-bottom: 25px;
 }
 
-/* ═════════════════════════════
-   BARRAS DE PROGRESO
-═════════════════════════════ */
+
 
 .barra-skills {
   height: 10px;
@@ -172,14 +168,13 @@ display: none;
   animation: cargar 2s forwards;
 }
 
-/* porcentajes individuales */
 .skills .col span {
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
 }
 
-/* texto del porcentaje */
+
 .progreso span {
   position: absolute;
   right: -35px;
@@ -188,7 +183,7 @@ display: none;
   color: var(--color-text);
 }
 
-/* animaciones por barra */
+
 .skills .col:nth-child(1) .barra-skills:nth-of-type(1) .progreso { width: 75%; }
 .skills .col:nth-child(1) .barra-skills:nth-of-type(2) .progreso { width: 89%; }
 .skills .col:nth-child(1) .barra-skills:nth-of-type(3) .progreso { width: 90%; }
@@ -198,46 +193,58 @@ display: none;
 .skills .col:nth-child(2) .barra-skills:nth-of-type(2) .progreso { width: 89%; }
 .skills .col:nth-child(2) .barra-skills:nth-of-type(3) .progreso { width: 90%; }
 
-/* animación */
+
 @keyframes cargar {
   from { width: 0; }
 }
 
-/* ═════════════════════════════
-   FOOTER
-═════════════════════════════ */
+
 
 footer {
-  background: #000;
-  padding: 60px 0;
-  text-align: center;
-  border-top: 1px solid var(--color-primary);
+  background: #000; 
+  margin-top: 80px;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-footer .redes {
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
   display: flex;
+  flex-direction: column; 
+  align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
+  text-align: center;
 }
 
-footer .redes a {
+.footer-content p {
   color: var(--color-text);
-  font-size: 24px;
+  font-size: 15px;
+}
+
+.redes {
+  display: flex;
+  gap: 18px;
+}
+
+.redes a {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-primary);
-  transition: 0.3s;
+  color: var(--color-text);
+  font-size: 18px;
+  transition: all .3s ease;
 }
 
-footer .redes a:hover {
-  color: #fff;
-  background: var(--color-primary);
-  box-shadow: 0 0 15px var(--color-primary);
-  transform: translateY(-3px);
+.redes a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
 }
 
 /* ═════════════════════════════
