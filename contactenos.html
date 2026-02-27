@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contáctenos</title>
+<link rel="stylesheet" href="./css/contactenos.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/index.html">Mi Perfil</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="./sobremi.html">Sobre mí</a></li>
+            <li><a href="./skill.html">Skills</a></li>
+            <li><a href="./curriculum.html">Currículum</a></li>
+            <li><a href="./portafolio.html">Portafolio</a></li>
+            <li><a href="./contactenos.html" aria-current="page">Contáctenos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contact-section">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h1>Contáctame</h1>
+            <p class="subtitle">
+                Estoy disponible para proyectos, colaboraciones o cualquier consulta.
+            </p>
+
+            <div class="contact-details">
+                <p><i class="fa-solid fa-envelope"></i> mauro.n119@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +57 333 720 2503</p>
+                <p><i class="fa-solid fa-location-dot"></i> Garzon - Huila - Colombia</p>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    © 2026 Mi Perfil Profesional
+</footer>
+
 </body>
 </html>
