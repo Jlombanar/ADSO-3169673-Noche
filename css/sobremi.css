@@ -208,8 +208,9 @@ transition:0.3s;
 }
 
 .redes a:hover{
-color:#ff2d75;
-transform:scale(1.2);
+    background:#ff2d75;
+    box-shadow:0 0 20px #ff2d75;
+    transform:scale(1.1);
 }
 
 /* ANIMACION SCROLL */
