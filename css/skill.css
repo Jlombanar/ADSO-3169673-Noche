@@ -213,14 +213,14 @@ SECCIÓN SKILLS
     }
 }
 
-.js { width: 75%; }
-.html { width: 89%; }
-.node { width: 90%; }
-.react { width: 90%; }
+.js { width: 0%; }
+.html { width: 80%; }
+.node { width: 0%; }
+.react { width: 0%; }
 
 .comunicacion { width: 75%; }
-.equipo { width: 89%; }
-.manager { width: 90%; }
+.equipo { width: 80%; }
+.manager { width: 80%; }
 .aura { width: 100%; }
 
 /* ═══════════════════════════════════
