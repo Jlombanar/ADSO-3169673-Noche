@@ -7,106 +7,133 @@
     <link rel="stylesheet" href="/css/skill.css">
     <title>Skills</title>
 </head>
+
 <body>
-    <!-- Header (igual que las demás páginas) -->
+
+    <!-- HEADER -->
     <div class="container-header">
-     <header>
-     <div class="logo">
-         <a href="./index.html">JSGC</a>
-     </div>
-     
-     <input type="checkbox" id="menu-toggle" />
-     <label for="menu-toggle" class="menu-icon">
-       <i class="fa-solid fa-bars"></i>
-     </label>
+        <header>
+            <div class="logo">
+                <a href="./index.html">JSGC</a>
+            </div>
 
-     <nav class="nav">
-         <ul>
-             <li><a href="./index.html">Inicio</a></li>
-             <li><a href="./sobremi.html">Sobre Mi</a></li>
-             <li><a href="./skill.html">Skills</a></li>
-             <li><a href="./curriculum.html">Curriculum</a></li>
-             <li><a href="./portafolio.html">Portafolio</a></li>
-             <li><a href="./contactenos.html">Contacto</a></li>
-         </ul>
-     </nav>
-    </header>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="sobremi.html">Sobre Mí</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li><a href="./curriculum.html">Curriculum</a></li>
+                    <li><a href="./portafolio.html">Portafolio</a></li>
+                    <li><a href="./contactenos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
-    <!-- Sección de skills -->
-  <section id="skills" class="skills">  
-  <div class="container-section">
-    <h2>Skills</h2>
-    <div class="fila">
-      <div class="col">
-        <h3>Technical Skills</h3>
-        <div class="skills">
-          <span>JavaScript</span>
-          <div class="barra-skills">
-            <div class="progreso">
-                <span>15%</span>
-            </div>
-          </div>
+    <!-- SECCIÓN SKILLS -->
+    <section id="skills" class="skills-section">
+        <div class="container-section">
+            <h2>Skills</h2>
 
-          <span>HTML y CSS</span>
-          <div class="barra-skills">
-            <div class="progreso">
-                <span>89%</span>
-            </div>
-          </div>
+            <div class="fila">
 
-          <span>Node JS</span>
-          <div class="barra-skills">
-           <div class="progreso">
-             <span>90%</span>
-           </div>
-          </div>
+                <!-- TECHNICAL SKILLS -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
 
-          <span>React</span>
-          <div class="barra-skills">
-            <div class="progreso">
-                <span>90%</span>
+                    <div class="skills-content">
+
+                        <span>Diseño Web</span>
+                        <div class="barra-skills">
+                           <div class="progreso" data-width="75%">
+                                <span>75%</span>
+                            </div>
+                        </div>
+
+                        <span>HTML y CSS</span>
+                        <div class="barra-skills">
+                           <div class="progreso" data-width="89%">
+                                <span>89%</span>
+                            </div>
+                        </div>
+
+                        <span>Frontend</span>
+                        <div class="barra-skills">
+                            <div class="progreso" data-width="90%">
+                                <span>90%</span>
+                            </div>
+                        </div>
+
+                        <span>Flutter</span>
+                        <div class="barra-skills">
+                            <div class="progreso" data-width="90%">
+                                <span>40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PROFESSIONAL SKILLS -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+
+                    <div class="skills-content">
+
+                        <span>Comunicación</span>
+                        <div class="barra-skills">
+                           <div class="progreso" data-width="75%">
+                                <span>75%</span>
+                            </div>
+                        </div>
+
+                        <span>Liderazgo</span>
+                        <div class="barra-skills">
+                            <div class="progreso" data-width="89%">
+                                <span>89%</span>
+                            </div>
+                        </div>
+
+                        <span>Problem Solving</span>
+                        <div class="barra-skills">
+                            <div class="progreso" data-width="90%">
+                                <span>90%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <div class="col">
-        <h3>Professional Skills</h3>
-        <div class="skills">
-          <span>Comunicación</span>
-          <div class="barra-skills">
-           <div class="progreso">
-             <span>75%</span>
-           </div>
-          </div>
-
-          <span>Trabajo en Equipo</span>
-          <div class="barra-skills">
-           <div class="progreso">
-            <span>89%</span>
-           </div>
-          </div>
-
-          <span>Project Manager</span>
-          <div class="barra-skills">
-           <div class="progreso">
-            <span>90%</span>
-          </div>
-          </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
- <footer>
-    <div class="redes">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-</footer>
 </body>
+<script>
+const progresos = document.querySelectorAll('.progreso');
+
+function animarBarras(){
+  progresos.forEach(barra => {
+    const porcentaje = barra.getAttribute('data-width');
+    barra.style.width = porcentaje;
+  });
+}
+
+window.addEventListener('load', animarBarras);
+</script>
 </html>

@@ -1,0 +1,185 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', 'Outfit', sans-serif;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, rgba(30, 35, 38, 0.894), rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff8f8;
+    overflow-x: hidden;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:1.2rem 8%;
+background:#000000;
+position:relative;
+}
+
+.logo a{
+font-size:2rem;
+font-weight:700;
+text-decoration:none;
+color:#00eaff;
+}
+
+.logo a span{
+color:#ffffff;
+}
+
+.nav-links{
+display:flex;
+gap:2rem;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#f8f8f8;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#00fbff;
+}
+
+.menu-icon{
+display:none;
+font-size:1.8rem;
+cursor:pointer;
+}
+
+#menu-toggle{
+display:none;
+}
+
+.curriculum{
+padding:5rem 8%;
+text-align:center;
+}
+
+.curriculum h2{
+font-size:2.5rem;
+margin-bottom:3rem;
+color: #dfe6e6;
+}
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:2rem;
+}
+
+.card{
+background:#000000;
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.info{
+padding:1.5rem;
+text-align:left;
+}
+
+.info h3{
+margin-bottom:.5rem;
+}
+
+.info span{
+color:#00fff7;
+font-size:.9rem;
+}
+
+.info p{
+margin-top:1rem;
+font-size:.95rem;
+line-height:1.5;
+}
+
+.footer{
+background:#000000;
+padding:3rem 8%;
+text-align:center;
+margin-top:4rem;
+}
+
+.social{
+margin:1rem 0;
+}
+
+.social a{
+color:#fff;
+margin:0 .7rem;
+font-size:1.3rem;
+transition:.3s;
+}
+
+.social a:hover{
+color:#ff0000;
+}
+
+.copy{
+margin-top:1rem;
+font-size:.85rem;
+opacity:.7;
+}
+
+@media(max-width:768px){
+
+.menu-icon{
+display:block;
+position:absolute;
+right:20px;
+top:50%;
+transform:translateY(-50%);
+}
+
+.nav-links{
+position:absolute;
+top:70px;
+right:-100%;
+background:#000000;
+flex-direction:column;
+width:220px;
+padding:20px;
+transition:.4s;
+border-radius:0 0 0 15px;
+}
+
+.nav-links a{
+padding:10px 0;
+}
+
+#menu-toggle:checked ~ .nav-links{
+right:0;
+}
+
+.curriculum h2{
+font-size:2rem;
+}
+
+}

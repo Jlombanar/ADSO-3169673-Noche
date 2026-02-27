@@ -1,248 +1,265 @@
-/* Importación de fuentes */
+/* Importación de fuentes sugeridas por las imágenes */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&family=Righteous&family=Work+Sans:wght@300;400;600&display=swap');
 
-/* Reset General */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Work Sans', sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Work Sans', sans-serif; /* Fuente más limpia según las capturas */
 }
 
-body {
-    min-height: 100vh;
-    background: linear-gradient(-45deg, #0f172a, #0000009e, #000000, #000000e1);
-    background-size: 400% 400%;
-      color: #fff;
-    overflow-x: hidden;
+html{
+scroll-behavior:smooth;
 }
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+body{
+/* Fondo oscuro profundo con gradiente sutil */
+background: linear-gradient(-45deg, #0f172a, #000000, #000000ec);
+background-size: 400% 400%;
+color:#fff;
+overflow-x:hidden;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 }
 
-/* ═══════════════════════════════════
-   HEADER 
-   ═══════════════════════════════════ */
-.container-header {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(12px);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99;
-    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+/* HEADER */
+
+.container-header{
+width:100%;
+background: rgba(0, 0, 0, 0.8); /* Fondo negro con transparencia */
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+box-shadow: 0 0 15px rgba(0, 255, 255, 0.1); /* Brillo cian sutil */
+backdrop-filter:blur(12px);
+border-bottom: 1px solid rgba(0, 255, 255, 0.1);
 }
 
-.container-header header {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+header{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 20px;
 }
 
-.logo a {
-    font-family: 'Righteous', cursive;
-    font-size: 30px;
-    background: linear-gradient(to right, #00ffff, #818cf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
+.logo a{
+font-family: 'Righteous', cursive;
+color:#fff;
+font-size:26px;
+text-decoration:none;
+letter-spacing:3px;
+/* Degradado cian para el logo JSGC */
+background: linear-gradient(to right, #00ffff, #818cf8);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
-/* Hamburguesa Logic */
-#menu-toggle { display: none; }
-.menu-icon { display: none; cursor: pointer; font-size: 24px; color: #00ffff; }
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+.nav ul{
+display:flex;
+list-style:none;
+gap:25px;
 }
 
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: 0.3s;
+.nav ul li a{
+text-decoration:none;
+color:#fff;
+transition:0.3s;
+font-size: 14px;
 }
 
-.nav ul li a:hover { color: #00ffff; }
-
-/* ═══════════════════════════════════
-   SECCIÓN SKILLS 
-   ═══════════════════════════════════ */
-.skills {
-    padding: 120px 20px 60px;
-    display: flex;
-    justify-content: center;
+.nav ul li a:hover,
+.nav ul li a.active{
+color: #00ffff; /* Color de acento Cian */
 }
 
-.container-section {
-    max-width: 1100px;
-    width: 100%;
+/* MENU */
+
+#menu-toggle{
+display:none;
 }
 
-.container-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    text-align: center;
-    margin-bottom: 50px;
-    background: linear-gradient(to right, #00ffff, #818cf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.menu-icon{
+display:none;
+font-size:25px;
+cursor:pointer;
+color: #00ffff;
 }
 
-.fila {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+/* ===================== */
+/* SKILLS SECTION */
+/* ===================== */
+
+.skills-section{
+padding-top:140px;
+padding-bottom:80px;
+flex: 1;
 }
 
-.col {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    padding: 35px;
-    transition: 0.4s ease;
+.container-section{
+max-width:1100px;
+margin:auto;
+padding:60px;
+border-radius:25px;
+background: rgba(255, 255, 255, 0.03); /* Vidrio oscuro */
+backdrop-filter:blur(15px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+border: 1px solid rgba(0, 255, 255, 0.1);
 }
 
-.col:hover {
-    transform: translateY(-10px);
-    border-color: rgba(0, 255, 255, 0.3);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+.skills-section h2{
+font-family: 'Playfair Display', serif;
+text-align:center;
+font-size:34px;
+margin-bottom:60px;
+color: #00ffff; /* Título principal en Cian */
+letter-spacing:2px;
 }
 
-.col h3 {
-    font-size: 22px;
-    color: #00ffff;
-    margin-bottom: 25px;
-    font-family: 'Outfit', sans-serif;
-    letter-spacing: 1px;
-    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-    padding-bottom: 10px;
+.fila{
+display:flex;
+gap:50px;
+flex-wrap:wrap;
 }
 
-/* ═══════════════════════════════════
-   LÓGICA DE BARRAS (Nuevas Reglas)
-   ═══════════════════════════════════ */
-
-/* Asegura que el contenedor de cada skill use Flexbox en columna */
-.col .skills {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px; 
+.col{
+flex:1;
+min-width:300px;
+transition:0.4s;
 }
 
-/* Fuerza a que el nombre de la skill ocupe toda la línea */
-.col .skills span {
-    display: block; 
-    width: 100%;
-    margin-bottom: 5px; 
-    font-size: 16px;
-    color: #fff;
-    font-weight: 600;
+.col:hover{
+transform:translateY(-8px);
+border-color: rgba(0, 0, 0, 0.127);
 }
 
-/* Estilo de la barra contenedora */
-.barra-skills {
-    width: 100%; 
-    height: 14px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    margin-bottom: 20px; 
-    overflow: hidden;
-    position: relative;
+.col h3{
+font-family: 'Outfit', sans-serif;
+margin-bottom:30px;
+color: #00ffff;
+text-align:center;
+border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+padding-bottom: 10px;
 }
 
-/* La barra de color interna */
-.progreso {
-    height: 100%;
-    background: linear-gradient(90deg, #00ffff, #818cf8);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    transition: width 1.5s ease-in-out;
+/* SKILL ITEMS */
+
+.skills-content span{
+display:block;
+margin:15px 0 8px 0;
+font-weight:600;
+letter-spacing:1px;
+color: #fff;
 }
 
-/* El texto del porcentaje dentro de la barra */
-.progreso span {
-    font-size: 10px;
-    font-weight: 800;
-    color: #000;
-    margin-right: 10px;
-    margin-bottom: 0 !important; 
-    width: auto !important; 
+/* BARRA BASE */
+
+.barra-skills{
+width:100%;
+height:14px;
+background: rgba(255, 255, 255, 0.1); /* Fondo gris neutro oscuro */
+border-radius:30px;
+overflow:hidden;
 }
 
-/* ═══════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════ */
-footer {
-    padding: 40px 0;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.3);
+/* PROGRESO ANIMADO */
+
+.progreso{
+height:100%;
+width:0;
+border-radius:30px;
+/* Degradado Cian/Azul de las barras Technical Skills */
+background: linear-gradient(90deg, #00ffff, #818cf8, #00ffff);
+background-size:200%;
+animation:shine 3s linear infinite;
+position:relative;
+transition:width 2s ease;
+box-shadow: 0 0 15px rgba(0, 255, 255, 0.311);
 }
 
-.redes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+@keyframes shine{
+0%{background-position:0%}
+100%{background-position:200%}
 }
 
-.redes a {
-    color: #fff;
-    font-size: 20px;
-    width: 45px;
-    height: 45px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-    text-decoration: none;
+.progreso span{
+position:absolute;
+right:10px;
+top:0;
+line-height: 14px; /* Centrado dentro de la barra */
+font-size:10px;
+font-weight: 800;
+color: #000; /* Texto oscuro para contraste sobre el cian */
 }
 
-.redes a:hover {
-    background: #00ffff;
-    color: #000;
-    transform: scale(1.1) rotate(10deg);
+/* FOOTER */
+
+footer{
+background: #0a0a0a; /* Negro sólido según el pie de página */
+padding: 40px 20px;
+text-align:center;
+margin-top:auto;
+border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* ═══════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════ */
-@media screen and (max-width: 768px) {
-    .menu-icon { display: block; }
-    
-    .nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 250px;
-        height: 100vh;
-        background: rgba(15, 23, 42, 0.98);
-        backdrop-filter: blur(15px);
-        transition: 0.5s;
-        padding-top: 80px;
-        border-left: 1px solid rgba(0, 255, 255, 0.2);
-    }
+.redes a{
+color:#fff;
+margin:0 10px;
+font-size:20px;
+width: 45px;
+height: 45px;
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+transition:0.3s;
+text-decoration: none;
+}
 
-    #menu-toggle:checked ~ .nav { right: 0; }
-    
-    .nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
+.redes a:hover{
+background: #00ffff;
+color: #000;
+box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+transform: scale(1.1) rotate(10deg);
+}
 
-    .fila { grid-template-columns: 1fr; }
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.menu-icon{
+display:block;
+}
+
+.nav{
+position:fixed;
+top:0;
+right:-100%;
+height:100vh;
+width:250px;
+background: rgba(15, 23, 42, 0.98);
+flex-direction:column;
+padding-top:100px;
+transition:0.5s;
+border-left: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.nav ul{
+flex-direction:column;
+align-items:center;
+gap:30px;
+}
+
+#menu-toggle:checked ~ .nav{
+right:0;
+}
+
+.fila{
+flex-direction:column;
+}
+
 }

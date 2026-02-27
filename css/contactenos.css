@@ -1,0 +1,205 @@
+/* 1. RESET Y FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Playfair+Display:wght@700&family=Work+Sans:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background: #0b0f14; /* Color oscuro de tus capturas */
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* 2. NAVEGACIÓN (Estilo Minimalista) */
+.nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #00ffff;
+}
+
+/* 3. SECCIÓN CONTACTO (Centrado Maestro) */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centra horizontalmente todo el contenido */
+    justify-content: center; /* Centra verticalmente en la pantalla */
+    padding: 60px 20px;
+    min-height: calc(100vh - 60px);
+}
+
+.contacto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    background: linear-gradient(to right, #00ffff, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    color: #cbd5e1;
+    margin-bottom: 40px;
+}
+
+/* 4. FORMULARIO (Espacios idénticos) */
+.formulario {
+    width: 100%;
+    max-width: 450px; /* Ancho idéntico a tus tarjetas de Sobre Mi */
+    background: rgba(255, 255, 255, 0.03); /* Efecto vidrio */
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    /* Color de sombra actualizado a Cian */
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.15); 
+
+    /* Flexbox para los inputs */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* ESPACIO IDÉNTICO ENTRE CAMPOS */
+    margin-bottom: 30px;
+}
+
+.formulario input, 
+.formulario textarea {
+    width: 100%;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro de los campos */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formulario textarea {
+    height: 150px;
+    resize: none;
+}
+
+.formulario input:focus, 
+.formulario textarea:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* 5. BOTÓN (Estilo de la imagen) */
+.formulario button {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00ffff, #818cf8);
+    color: #0b0f14;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.formulario button:hover {
+    transform: scale(1.02);
+    /* SOMBRA ESPECÍFICA SOLICITADA */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* 6. MAPA (Ajustado al mismo ancho) */
+.mapa {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    /* Color de sombra actualizado a Cian */
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.15);
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    filter: grayscale(1) invert(0.9) contrast(1.2); /* Mapa estilo oscuro */
+}
+
+/* ===================== */
+/* RESPONSIVE        */
+/* ===================== */
+
+@media screen and (max-width: 768px) {
+    .nav ul {
+        gap: 10px;
+        flex-wrap: wrap; 
+    }
+
+    .nav ul li a {
+        font-size: 13px;
+    }
+
+    .contacto {
+        padding: 40px 15px;
+    }
+
+    .contacto h2 {
+        font-size: 32px; 
+    }
+
+    .formulario {
+        padding: 25px; 
+        max-width: 100%; 
+    }
+
+    .formulario input, 
+    .formulario textarea,
+    .formulario button {
+        padding: 15px; 
+        font-size: 15px;
+    }
+
+    .formulario textarea {
+        height: 120px; 
+    }
+
+    .mapa {
+        max-width: 100%; 
+    }
+
+    .mapa iframe {
+        height: 200px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacto h2 {
+        font-size: 28px;
+    }
+    
+    .nav {
+        padding: 15px 10px;
+    }
+}
