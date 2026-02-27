@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Carlos Stiven León</title>
+
+  <link rel="stylesheet" href="css/contactenos.css">
+  <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+<header class="navbar">
+  <div class="logo">
+    <a href="#">C<span>S</span>L</a>
+  </div>
+
+  <input type="checkbox" id="menu-toggle" class="menu-check">
+
+  <label for="menu-toggle" class="menu-icon">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+
+  <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="sobremi.html">Sobre Mi</a>
+    <a href="skill.html">Skills</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="protafolio.html">Portafolio</a>
+    <a href="contactenos.html" class="btn-contact">Contacto</a>
+  </nav>
+</header>
+
+<main class="contact-main">
+
+  <section class="contact-container">
+    <h2>Contáctame</h2>
+    <p>¿Tienes un proyecto o una idea? Hablemos 👇</p>
+
+    <form class="contact-form">
+      <div class="input-group">
+        <input type="text" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="input-group">
+        <input type="email" placeholder="Tu correo electrónico" required>
+      </div>
+
+      <div class="input-group">
+        <textarea rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <section class="map-section">
+    <h3>Ubicación</h3>
+    <div class="map-wrapper">
+      <iframe 
+        src="https://www.google.com/maps?q=Garzón,Huila&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="redes">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  <p>© 2026 Carlos Stiven León - Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>
