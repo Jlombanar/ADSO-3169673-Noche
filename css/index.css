@@ -1,4 +1,3 @@
-/* Importar fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
 /* Reset básico y configuración de fuentes */
@@ -26,9 +25,6 @@ body {
     color: #fff;
 }
 
-/* ═══════════════════════════════════
-HEADER FIJO EN LA PARTE SUPERIOR
-═══════════════════════════════════ */
 .container-header {
     background: rgba(0,0,0,0.95);
     backdrop-filter: blur(10px);
@@ -58,9 +54,6 @@ HEADER FIJO EN LA PARTE SUPERIOR
     text-decoration: none;
 }
 
-/* ═══════════════════════════════════
-MENÚ DE NAVEGACIÓN
-═══════════════════════════════════ */
 .nav ul {
     display: flex;
     list-style: none;
@@ -75,13 +68,11 @@ MENÚ DE NAVEGACIÓN
     transition: 0.3s ease;
 }
 
-/* Color dorado en hover y activo */
 .nav ul li a:hover,
 .nav ul li a.active {
     color: #d4af37;
 }
 
-/* Línea animada desde el centro */
 .nav ul li a::after {
     content: "";
     position: absolute;
@@ -94,15 +85,11 @@ MENÚ DE NAVEGACIÓN
     transform: translateX(-50%);
 }
 
-/* Mostrar línea en hover y activo */
 .nav ul li a:hover::after,
 .nav ul li a.active::after {
     width: 100%;
 }
 
-/* ═══════════════════════════════════
-MENÚ RESPONSIVE (sin JavaScript)
-═══════════════════════════════════ */
 #menu-toggle {
     display: none;
 }
@@ -116,9 +103,6 @@ MENÚ RESPONSIVE (sin JavaScript)
     border-radius: 20px;
 }
 
-/* ═══════════════════════════════════
-SECCIÓN PRINCIPAL (HERO)
-═══════════════════════════════════ */
 .inicio {
     flex: 1;
     min-height: 113vh;
@@ -174,7 +158,6 @@ section {
     scroll-margin-top: 100px;
 }
 
-/* Animación elegante de entrada */
 @keyframes revealHero {
     0% {
         opacity: 0;
@@ -186,9 +169,6 @@ section {
     }
 }
 
-/* ═══════════════════════════════════
-REDES SOCIALES
-═══════════════════════════════════ */
 .redes {
     display: flex;
     justify-content: center;
@@ -218,9 +198,6 @@ REDES SOCIALES
     box-shadow: 0 0 20px rgba(212,175,55,0.6);
 }
 
-/* ═══════════════════════════════════
-FOOTER
-═══════════════════════════════════ */
 footer {
     background-color: black;
     color: #fff;
@@ -230,9 +207,6 @@ footer {
     border-top: 1px solid rgba(212,175,55,0.2);
 }
 
-/* ═══════════════════════════════════
-RESPONSIVE DESIGN (Móviles)
-═══════════════════════════════════ */
 @media screen and (max-width: 768px) {
 
     .menu-icon {
@@ -253,16 +227,12 @@ RESPONSIVE DESIGN (Móviles)
         border: 1px solid #d4af37;
     }
 
-    /* Mostrar menú cuando el checkbox está marcado */
     #menu-toggle:checked + .menu-icon + .nav ul {
         display: flex;
         align-items: center;
     }
 }
 
-/* ═══════════════════════════════════
-RESPONSIVE EXTRA - Tablets (1024px)
-═══════════════════════════════════ */
 @media screen and (max-width: 1024px) {
 
     .container-header header {
@@ -283,10 +253,6 @@ RESPONSIVE EXTRA - Tablets (1024px)
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - Tablets pequeñas (768px)
-═══════════════════════════════════ */
 @media screen and (max-width: 768px) {
 
     .inicio {
@@ -324,10 +290,6 @@ RESPONSIVE - Tablets pequeñas (768px)
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - Móviles pequeños (480px)
-═══════════════════════════════════ */
 @media screen and (max-width: 480px) {
 
     .container-banner {
@@ -359,10 +321,6 @@ RESPONSIVE - Móviles pequeños (480px)
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - Pantallas grandes (1400px+)
-═══════════════════════════════════ */
 @media screen and (min-width: 1400px) {
 
     .container-banner {

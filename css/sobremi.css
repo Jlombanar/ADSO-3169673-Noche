@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-/* ═══════════════════════════════════
-RESET
-═══════════════════════════════════ */
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +21,6 @@ body {
     color: #fff;
 }
 
-/* ═══════════════════════════════════
-HEADER FIJO
-═══════════════════════════════════ */
 .container-header {
     background: rgba(0,0,0,0.95);
     backdrop-filter: blur(10px);
@@ -56,9 +50,6 @@ HEADER FIJO
     text-decoration: none;
 }
 
-/* ═══════════════════════════════════
-MENÚ DESKTOP
-═══════════════════════════════════ */
 .nav ul {
     display: flex;
     list-style: none;
@@ -78,7 +69,6 @@ MENÚ DESKTOP
     color: #d4af37;
 }
 
-/* Línea animada elegante */
 .nav ul li a::after {
     content: "";
     position: absolute;
@@ -96,9 +86,6 @@ MENÚ DESKTOP
     width: 100%;
 }
 
-/* ═══════════════════════════════════
-MENÚ RESPONSIVE
-═══════════════════════════════════ */
 #menu-toggle {
     display: none;
 }
@@ -111,9 +98,6 @@ MENÚ RESPONSIVE
     margin-left: auto;
 }
 
-/* ═══════════════════════════════════
-SECCIÓN SOBRE MÍ
-═══════════════════════════════════ */
 .sobremi {
     padding: 130px 20px 80px;
     animation: fadeUp 1.2s ease forwards;
@@ -148,7 +132,6 @@ SECCIÓN SOBRE MÍ
     font-weight: 600;
 }
 
-/* COLUMNAS */
 .fila {
     display: flex;
     flex-wrap: wrap;
@@ -166,9 +149,6 @@ SECCIÓN SOBRE MÍ
     font-size: 24px;
 }
 
-/* ═══════════════════════════════════
-DATOS PERSONALES
-═══════════════════════════════════ */
 .col ul {
     list-style: none;
 }
@@ -194,9 +174,6 @@ DATOS PERSONALES
     color: #fff;
 }
 
-/* ═══════════════════════════════════
-INTERESES
-═══════════════════════════════════ */
 .container-interes {
     display: flex;
     flex-wrap: wrap;
@@ -238,13 +215,10 @@ INTERESES
     transform: scale(1.2);
 }
 
-/* ═══════════════════════════════════
-FOOTER MEJORADO
-═══════════════════════════════════ */
 footer {
     background: #000;
     border-top: 1px solid rgba(212,175,55,0.2);
-    padding: 12px 20px; /* reducido */
+    padding: 12px 20px;
 }
 
 .footer-content {
@@ -253,7 +227,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px; /* reducido */
+    gap: 10px; 
 }
 
 .footer-content p {
@@ -287,14 +261,11 @@ footer {
     transform: translateY(-4px);
 }
 
-/* ═══════════════════════════════════
-REDES SOCIALES
-═══════════════════════════════════ */
 .redes {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 8px; /* reducido */
+    margin-top: 8px;
 }
 
 .redes a {
@@ -319,9 +290,6 @@ REDES SOCIALES
     box-shadow: 0 0 20px rgba(212,175,55,0.6);
 }
 
-/* ═══════════════════════════════════
-ANIMACIÓN
-═══════════════════════════════════ */
 @keyframes fadeUp {
     0% {
         opacity: 0;
@@ -333,9 +301,6 @@ ANIMACIÓN
     }
 }
 
-/* ═══════════════════════════════════
-RESPONSIVE
-═══════════════════════════════════ */
 @media screen and (max-width:768px) {
 
     .menu-icon {
@@ -377,9 +342,6 @@ RESPONSIVE
 
 }
 
-/* ═══════════════════════════════════
-RESPONSIVE EXTRA - 1024px (Tablets)
-═══════════════════════════════════ */
 @media screen and (max-width:1024px){
 
     .sobremi h2{
@@ -405,10 +367,6 @@ RESPONSIVE EXTRA - 1024px (Tablets)
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - 768px (Tablets pequeñas)
-═══════════════════════════════════ */
 @media screen and (max-width:768px){
 
     .sobremi{
@@ -451,10 +409,6 @@ RESPONSIVE - 768px (Tablets pequeñas)
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - 480px (Móviles pequeños)
-═══════════════════════════════════ */
 @media screen and (max-width:480px){
 
     .sobremi h2{
@@ -494,10 +448,6 @@ RESPONSIVE - 480px (Móviles pequeños)
     }
 }
 
-
-/* ═══════════════════════════════════
-PANTALLAS GRANDES 1400px+
-═══════════════════════════════════ */
 @media screen and (min-width:1400px){
 
     .container-section{

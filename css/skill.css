@@ -21,9 +21,6 @@ body {
     color: #fff;
 }
 
-/* ═══════════════════════════════════
-HEADER
-═══════════════════════════════════ */
 .container-header {
     background: rgba(0,0,0,0.95);
     backdrop-filter: blur(10px);
@@ -53,9 +50,6 @@ HEADER
     text-decoration: none;
 }
 
-/* ═══════════════════════════════════
-MENÚ DESKTOP
-═══════════════════════════════════ */
 .nav ul {
     display: flex;
     list-style: none;
@@ -104,9 +98,6 @@ MENÚ DESKTOP
     margin-left: auto;
 }
 
-/* ═══════════════════════════════════
-SECCIÓN SKILLS
-═══════════════════════════════════ */
 .skills-section {
     padding: 100px 20px 30px;
     animation: fadeUp 1.2s ease forwards;
@@ -223,13 +214,10 @@ SECCIÓN SKILLS
 .manager { width: 80%; }
 .aura { width: 100%; }
 
-/* ═══════════════════════════════════
-FOOTER MEJORADO
-═══════════════════════════════════ */
 footer {
     background: #000;
     border-top: 1px solid rgba(212,175,55,0.2);
-    padding: 12px 20px; /* reducido */
+    padding: 12px 20px; 
 }
 
 .footer-content {
@@ -238,7 +226,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px; /* reducido */
+    gap: 10px; 
 }
 
 .footer-content p {
@@ -272,14 +260,11 @@ footer {
     transform: translateY(-4px);
 }
 
-/* ═══════════════════════════════════
-REDES SOCIALES
-═══════════════════════════════════ */
 .redes {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 8px; /* reducido */
+    margin-top: 8px; 
 }
 
 .redes a {
@@ -304,9 +289,6 @@ REDES SOCIALES
     box-shadow: 0 0 20px rgba(212,175,55,0.6);
 }
 
-/* ═══════════════════════════════════
-RESPONSIVE
-═══════════════════════════════════ */
 @media screen and (max-width:768px) {
 
     .menu-icon {
@@ -348,9 +330,6 @@ RESPONSIVE
 
 }
 
-/* ═══════════════════════════════════
-RESPONSIVE EXTRA - 1024px
-═══════════════════════════════════ */
 @media screen and (max-width:1024px){
 
     .container-section{
@@ -375,10 +354,6 @@ RESPONSIVE EXTRA - 1024px
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - 768px
-═══════════════════════════════════ */
 @media screen and (max-width:768px){
 
     .skills-section{
@@ -408,10 +383,6 @@ RESPONSIVE - 768px
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - 480px
-═══════════════════════════════════ */
 @media screen and (max-width:480px){
 
     .container-section{
@@ -454,10 +425,6 @@ RESPONSIVE - 480px
     }
 }
 
-
-/* ═══════════════════════════════════
-PANTALLAS GRANDES 1400px+
-═══════════════════════════════════ */
 @media screen and (min-width:1400px){
 
     .container-section{

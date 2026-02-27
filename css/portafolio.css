@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-/* RESET */
 * {
     margin:0;
     padding:0;
@@ -22,7 +21,6 @@ body {
     color:#fff;
 }
 
-/* HEADER */
 .container-header {
     background:rgba(0,0,0,0.95);
     backdrop-filter:blur(10px);
@@ -53,7 +51,6 @@ body {
     text-decoration:none;
 }
 
-/* MENÚ */
 .nav ul {
     display:flex;
     list-style:none;
@@ -99,7 +96,6 @@ body {
     color:#d4af37;
 }
 
-/* SECCIÓN */
 .portfolio-section {
     padding:100px 20px 30px;
     animation:fadeUp 1.2s ease forwards;
@@ -134,14 +130,12 @@ body {
     opacity:.75;
 }
 
-/* GRID */
 .portfolio-grid {
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:40px;
 }
 
-/* CARD */
 .portfolio-card {
     background:rgba(0,0,0,.55);
     padding:25px;
@@ -192,14 +186,10 @@ body {
     color:#d4af37;
 }
 
-/* ═══════════════════════════════════
-FOOTER MEJORADO
-═══════════════════════════════════ */
-
 footer {
     background: #000;
     border-top: 1px solid rgba(212,175,55,0.2);
-    padding: 12px 20px; /* reducido */
+    padding: 12px 20px; 
 }
 
 .footer-content {
@@ -208,7 +198,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px; /* reducido */
+    gap: 10px; 
 }
 
 .footer-content p {
@@ -216,7 +206,6 @@ footer {
     font-size: 14px;
 }
 
-/* Redes alineadas a la derecha */
 .redes {
     display: flex;
     gap: 15px;
@@ -243,15 +232,11 @@ footer {
     transform: translateY(-4px);
 }
 
-/* ═══════════════════════════════════
-REDES SOCIALES
-═══════════════════════════════════ */
-
 .redes {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 8px; /* reducido */
+    margin-top: 8px; 
 }
 
 .redes a {
@@ -276,7 +261,6 @@ REDES SOCIALES
     box-shadow: 0 0 20px rgba(212,175,55,0.6);
 }
 
-/* RESPONSIVE */
 @media screen and (max-width:900px) {
 
     .menu-icon { display:block; margin-left:auto; }
@@ -314,9 +298,6 @@ REDES SOCIALES
 
 }
 
-/* ═══════════════════════════════════
-RESPONSIVE EXTRA - 1200px
-═══════════════════════════════════ */
 @media screen and (max-width:1200px){
 
     .portfolio-grid{
@@ -333,10 +314,6 @@ RESPONSIVE EXTRA - 1200px
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - 768px
-═══════════════════════════════════ */
 @media screen and (max-width:768px){
 
     .portfolio-section{
@@ -376,10 +353,6 @@ RESPONSIVE - 768px
     }
 }
 
-
-/* ═══════════════════════════════════
-RESPONSIVE - 480px
-═══════════════════════════════════ */
 @media screen and (max-width:480px){
 
     .container-section{
@@ -438,10 +411,6 @@ RESPONSIVE - 480px
     }
 }
 
-
-/* ═══════════════════════════════════
-PANTALLAS GRANDES 1400px+
-═══════════════════════════════════ */
 @media screen and (min-width:1400px){
 
     .container-section{

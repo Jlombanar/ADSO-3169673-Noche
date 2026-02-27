@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-/* RESET */
 * {
     margin:0;
     padding:0;
@@ -22,7 +21,6 @@ body {
     color:#fff;
 }
 
-/* HEADER */
 .container-header {
     background:rgba(0,0,0,0.95);
     backdrop-filter:blur(10px);
@@ -92,9 +90,6 @@ body {
 #menu-toggle { display:none; }
 .menu-icon { display:none; font-size:24px; cursor:pointer; color:#d4af37; }
 
-/* ═══════════════════════════════
-SECCIÓN CONTACTO
-═══════════════════════════════ */
 .contact-section {
     padding:100px 20px 30px;
     display:flex;
@@ -130,7 +125,6 @@ SECCIÓN CONTACTO
     opacity:.75;
 }
 
-/* GRID */
 .contact-grid {
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -138,7 +132,6 @@ SECCIÓN CONTACTO
     align-items:stretch;
 }
 
-/* TARJETAS */
 .contact-card {
     background:rgba(255,255,255,.03);
     padding:50px;
@@ -156,7 +149,6 @@ SECCIÓN CONTACTO
     border:1px solid rgba(212,175,55,.4);
 }
 
-/* FORMULARIO */
 form {
     width:100%;
     display:flex;
@@ -164,7 +156,6 @@ form {
     gap:30px;
 }
 
-/* INPUTS BONITOS DE VERDAD */
 input,
 textarea {
     width:100%;
@@ -195,7 +186,6 @@ textarea {
     resize:none;
 }
 
-/* BOTÓN */
 button {
     width:100%;
     padding:16px;
@@ -214,7 +204,6 @@ button:hover {
     box-shadow:0 15px 30px rgba(212,175,55,.5);
 }
 
-/* MAPA */
 .map-card {
     padding:0;
     overflow:hidden;
@@ -228,11 +217,10 @@ button:hover {
     border-radius:30px;
 }
 
-/* FOOTER */
 footer {
     background: #000;
     border-top: 1px solid rgba(212,175,55,0.2);
-    padding: 12px 20px; /* reducido */
+    padding: 12px 20px; 
 }
 
 .footer-content {
@@ -241,7 +229,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px; /* reducido */
+    gap: 10px;
 }
 
 .footer-content p {
@@ -249,12 +237,11 @@ footer {
     font-size: 14px;
 }
 
-/* REDES SOCIALES */
 .redes {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 8px; /* reducido */
+    margin-top: 8px; 
 }
 
 .redes a {
@@ -279,7 +266,6 @@ footer {
     box-shadow: 0 0 20px rgba(212,175,55,0.6);
 }
 
-/* RESPONSIVE */
 @media screen and (max-width:1000px) {
     .contact-grid { grid-template-columns:1fr; gap:40px; }
     .container-section { padding:50px 30px; }
@@ -288,7 +274,6 @@ footer {
 }
 
 @media screen and (max-width:900px) {
-    /* HAMBURGUESA */
     .menu-icon { display:block; margin-left:auto; }
     .nav ul {
         display:none;
@@ -305,16 +290,12 @@ footer {
     }
     #menu-toggle:checked + .menu-icon + .nav ul { display:flex; align-items:center; }
 
-    /* CONTACTO */
     .contact-grid { grid-template-columns:1fr; gap:40px; }
     .container-section { padding:50px 30px; }
     .contact-section h2 { font-size:36px; }
     .map-card iframe { min-height:320px; }
 }
 
-/* ═══════════════════════════════════
-1200px - Pantallas medianas grandes
-═══════════════════════════════════ */
 @media screen and (max-width:1200px){
 
     .container-section{
@@ -335,10 +316,6 @@ footer {
     }
 }
 
-
-/* ═══════════════════════════════════
-768px - Tablets
-═══════════════════════════════════ */
 @media screen and (max-width:768px){
 
     .contact-section{
@@ -390,10 +367,6 @@ footer {
     }
 }
 
-
-/* ═══════════════════════════════════
-480px - Móviles pequeños
-═══════════════════════════════════ */
 @media screen and (max-width:480px){
 
     .container-section{
@@ -448,10 +421,6 @@ footer {
     }
 }
 
-
-/* ═══════════════════════════════════
-1400px+ - Pantallas grandes
-═══════════════════════════════════ */
 @media screen and (min-width:1400px){
 
     .container-section{
