@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/contactenos.css">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/curriculum.css">
+    <title>Skills</title>
 </head>
+
 <body>
-    
+    <div class="container-header">
+    <header>
+      <div class="logo">
+        <a href="#">JJGS</a>
+      </div>
+
+       <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+
+       <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./sobremi.html">Sobre Mi</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./curriculum.html">Curriculum</a></li>
+          <li><a href="./portafolio.html">Portafolio</a></li>
+          <li><a href="./contactenos.html">Contacto</a></li>
+        </ul>
+      </nav> 
+    </header>
+</div>
+
+<section class="contact-section">
+    <h2>Contáctame</h2>
+
+    <div class="contact-container">
+
+        <!-- FORMULARIO -->
+        <form action="https://formspree.io/f/TU_ID_AQUI" method="POST" class="contact-form">
+
+            <input type="text" name="nombre" placeholder="Nombre Completo" required>
+
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+
+        </form>
+
+        <!-- GOOGLE MAPS -->
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps?q=SENA+Colombia&output=embed"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Jhon Jamer Guevara Sánchez - Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>
