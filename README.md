@@ -8,6 +8,7 @@
 ** Fluterr
 
 ## Arquitectura 
+```
 mi-proyecto/
 │
 ├── node_modules/
@@ -62,4 +63,5 @@ mi-proyecto/
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
 
